@@ -1160,3 +1160,341 @@ button {
     flex-wrap: wrap;
   }
 }
+
+/* ========================================
+   Program Details Section
+   ======================================== */
+.program-details-section {
+  background: linear-gradient(180deg, #FFF5F0 0%, #FFEEE5 100%);
+  padding: var(--spacing-3xl) 0;
+}
+
+.program-details-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Tabs Header */
+.program-tabs-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.pyramid-icon {
+  flex-shrink: 0;
+}
+
+.program-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  background: var(--color-white);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.program-tab {
+  padding: var(--spacing-sm) var(--spacing-xl);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-gray-600);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.program-tab.active {
+  background: linear-gradient(135deg, #EC4899, #F97316);
+  color: var(--color-white);
+}
+
+.program-tab:hover:not(.active) {
+  background: var(--color-gray-100);
+}
+
+/* Program Goal */
+.program-goal {
+  text-align: right;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.goal-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: #EC4899;
+  margin-bottom: var(--spacing-md);
+}
+
+.goal-icon {
+  width: 24px;
+  height: 24px;
+  background: #EC4899;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+}
+
+.goal-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: 1.8;
+  max-width: 900px;
+  margin-right: auto;
+}
+
+/* Learning Section */
+.learning-section {
+  text-align: right;
+}
+
+.learning-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: #EC4899;
+  margin-bottom: var(--spacing-xl);
+}
+
+.learning-icon {
+  width: 24px;
+  height: 24px;
+  background: #EC4899;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+}
+
+/* Learning Cards Grid */
+.learning-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2xl) var(--spacing-xl);
+}
+
+.learning-card {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+/* Alternating layout - odd cards: text first, image second (flex-direction: row-reverse) */
+/* Even cards: image first, text second (default) */
+.learning-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.learning-card:nth-child(even) {
+  flex-direction: row;
+}
+
+.learning-card-image {
+  width: 160px;
+  height: 130px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: rotate(-3deg);
+  transition: transform var(--transition-base);
+}
+
+.learning-card:hover .learning-card-image {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.learning-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.learning-card-content {
+  flex: 1;
+}
+
+/* Odd cards - text aligned to right */
+.learning-card:nth-child(odd) .learning-card-content {
+  text-align: right;
+}
+
+.learning-card:nth-child(odd) .learning-card-title {
+  justify-content: flex-end;
+}
+
+/* Even cards - text aligned to right as well (RTL) */
+.learning-card:nth-child(even) .learning-card-content {
+  text-align: right;
+}
+
+.learning-card:nth-child(even) .learning-card-title {
+  justify-content: flex-end;
+}
+
+.learning-card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: #EC4899;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  background: #EC4899;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+  flex-shrink: 0;
+}
+
+.learning-card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Graduation Card - Full Width */
+.graduation-card {
+  grid-column: 1 / -1;
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-gray-100);
+}
+
+.graduation-title {
+  color: var(--color-gray-900);
+}
+
+.graduation-icon {
+  font-size: var(--font-size-xl);
+}
+
+/* Responsive for Program Details */
+@media (max-width: 768px) {
+  .program-tabs-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .program-tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .learning-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .learning-card-content {
+    text-align: center;
+  }
+
+  .learning-card-title {
+    justify-content: center;
+  }
+
+  .goal-title,
+  .learning-title {
+    justify-content: center;
+  }
+
+  .goal-description {
+    text-align: center;
+  }
+}
+
+/* ========================================
+   Image Collage for Learning Cards
+   ======================================== */
+.learning-card-images-collage {
+  position: relative;
+  width: 180px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.collage-img {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.collage-img-1 {
+  width: 90px;
+  height: 75px;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 var(--radius-lg);
+}
+
+.collage-img-2 {
+  width: 100px;
+  height: 90px;
+  top: 25px;
+  right: 70px;
+  z-index: 2;
+  border-radius: var(--radius-lg);
+}
+
+.collage-img-3 {
+  width: 85px;
+  height: 70px;
+  bottom: 0;
+  right: 20px;
+  z-index: 1;
+  border-radius: var(--radius-lg);
+}
+
+.learning-card:hover .collage-img {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .learning-card-images-collage {
+    width: 160px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
