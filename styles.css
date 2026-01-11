@@ -856,25 +856,27 @@ button {
 
 .summer-program-label {
   color: #14B8A6;
-  font-size: var(--font-size-base);
-  font-weight: 500;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
   margin-bottom: var(--spacing-lg);
   letter-spacing: 0.5px;
 }
 
 .summer-headline {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 900;
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.3;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
   color: #1a1a1a;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .summer-subtitle {
-  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: #FF6B35;
   margin: 0;
+  line-height: 1.3;
 }
 
 .summer-icon-right {
@@ -894,15 +896,16 @@ button {
   justify-content: center;
   align-items: center;
   gap: var(--spacing-xl);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
 }
 
 .summer-description {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-600);
-  line-height: 1.8;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
+  line-height: 1.6;
   text-align: center;
   margin: 0;
+  font-weight: 500;
 }
 
 .summer-logo {
@@ -946,9 +949,9 @@ button {
 }
 
 .pill-text {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-700);
-  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-800);
+  font-weight: 700;
 }
 
 /* Info Points */
@@ -971,10 +974,11 @@ button {
 }
 
 .summer-info-item p {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-600);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
   line-height: 1.7;
   margin: 0;
+  font-weight: 500;
 }
 
 /* Icons Strip */
@@ -1048,8 +1052,8 @@ button {
   align-items: center;
   gap: var(--spacing-xs);
   color: #EC4899;
-  font-weight: 700;
-  font-size: var(--font-size-base);
+  font-weight: 800;
+  font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -1065,11 +1069,12 @@ button {
 }
 
 .month-content-list li {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   color: var(--color-gray-700);
   line-height: 1.8;
   position: relative;
   padding-right: var(--spacing-sm);
+  font-weight: 500;
 }
 
 .month-content-list li::before {
@@ -1225,13 +1230,17 @@ button {
 
 .goal-title {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--spacing-sm);
   font-size: var(--font-size-xl);
   font-weight: 700;
   color: #EC4899;
   margin-bottom: var(--spacing-md);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .goal-icon {
@@ -1247,11 +1256,11 @@ button {
 }
 
 .goal-description {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-600);
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
   line-height: 1.8;
-  max-width: 900px;
-  margin-right: auto;
+  text-align: right;
+  font-weight: 500;
 }
 
 /* Learning Section */
@@ -1261,13 +1270,17 @@ button {
 
 .learning-title {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--spacing-sm);
   font-size: var(--font-size-xl);
   font-weight: 700;
   color: #EC4899;
   margin-bottom: var(--spacing-xl);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .learning-icon {
@@ -1295,29 +1308,45 @@ button {
   align-items: flex-start;
 }
 
-/* Alternating layout - odd cards: text first, image second (flex-direction: row-reverse) */
-/* Even cards: image first, text second (default) */
-.learning-card:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-
-.learning-card:nth-child(even) {
+/* Card 1 (Digital Fabrication) - Right side: image left, text right */
+.learning-card:nth-child(1) {
   flex-direction: row;
 }
 
+/* Card 2 (Design Thinking) - Left side: text left, image right */
+.learning-card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+/* Card 3 (Electronics) - Right side: image left, text right */
+.learning-card:nth-child(3) {
+  flex-direction: row;
+}
+
+/* Card 4 (2D CAD) - Left side: text left, image right */
+.learning-card:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
 .learning-card-image {
-  width: 160px;
-  height: 130px;
-  border-radius: var(--radius-xl);
+  width: 200px;
+  height: 160px;
+  border-radius: 30px 30px 30px 80px;
   overflow: hidden;
   flex-shrink: 0;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-  transform: rotate(-3deg);
-  transition: transform var(--transition-base);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+/* Alternate corner radius for visual variety */
+.learning-card:nth-child(2) .learning-card-image,
+.learning-card:nth-child(4) .learning-card-image {
+  border-radius: 30px 30px 80px 30px;
 }
 
 .learning-card:hover .learning-card-image {
-  transform: rotate(0deg) scale(1.02);
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 .learning-card-image img {
@@ -1328,32 +1357,17 @@ button {
 
 .learning-card-content {
   flex: 1;
-}
-
-/* Odd cards - text aligned to right */
-.learning-card:nth-child(odd) .learning-card-content {
   text-align: right;
-}
-
-.learning-card:nth-child(odd) .learning-card-title {
-  justify-content: flex-end;
-}
-
-/* Even cards - text aligned to right as well (RTL) */
-.learning-card:nth-child(even) .learning-card-content {
-  text-align: right;
-}
-
-.learning-card:nth-child(even) .learning-card-title {
-  justify-content: flex-end;
 }
 
 .learning-card-title {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: var(--spacing-xs);
-  font-size: var(--font-size-base);
-  font-weight: 700;
+  justify-content: flex-start;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+  font-weight: 800;
   color: #EC4899;
   margin-bottom: var(--spacing-sm);
   line-height: 1.4;
@@ -1373,10 +1387,11 @@ button {
 }
 
 .learning-card-desc {
-  font-size: var(--font-size-sm);
-  color: var(--color-gray-600);
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
   line-height: 1.8;
   margin: 0;
+  font-weight: 500;
 }
 
 /* Graduation Card - Full Width */
@@ -1391,6 +1406,10 @@ button {
 
 .graduation-title {
   color: var(--color-gray-900);
+  justify-content: flex-start;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .graduation-icon {
@@ -1447,44 +1466,44 @@ button {
    ======================================== */
 .learning-card-images-collage {
   position: relative;
-  width: 180px;
-  height: 140px;
+  width: 220px;
+  height: 170px;
   flex-shrink: 0;
 }
 
 .collage-img {
   position: absolute;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   transition: transform var(--transition-base);
 }
 
 .collage-img-1 {
-  width: 90px;
-  height: 75px;
+  width: 110px;
+  height: 90px;
   top: 0;
   right: 0;
   z-index: 3;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 var(--radius-lg);
+  border-radius: 20px 20px 20px 50px;
 }
 
 .collage-img-2 {
-  width: 100px;
-  height: 90px;
-  top: 25px;
-  right: 70px;
+  width: 120px;
+  height: 100px;
+  top: 30px;
+  right: 90px;
   z-index: 2;
-  border-radius: var(--radius-lg);
+  border-radius: 20px;
 }
 
 .collage-img-3 {
-  width: 85px;
-  height: 70px;
+  width: 100px;
+  height: 85px;
   bottom: 0;
-  right: 20px;
+  right: 25px;
   z-index: 1;
-  border-radius: var(--radius-lg);
+  border-radius: 20px 20px 50px 20px;
 }
 
 .learning-card:hover .collage-img {
