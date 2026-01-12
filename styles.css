@@ -1517,3 +1517,75 @@ button {
     margin: 0 auto;
   }
 }
+
+/* ========================================
+   Lucide Icons Styles
+   ======================================== */
+
+/* Base icon styles */
+[data-lucide] {
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* Feature card icons - larger size */
+.feature-icon [data-lucide] {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+/* Star rating icons */
+.star [data-lucide] {
+  color: #fbbf24;
+  fill: #fbbf24;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* Check icons for lists */
+.icon-check [data-lucide] {
+  color: var(--color-primary-orange);
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+/* Large icons for stats/info sections */
+.stat-icon [data-lucide],
+.info-icon [data-lucide] {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Pill icons for summer programs */
+.pill-icon [data-lucide] {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* DUB program icons */
+.dub-icon [data-lucide] {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Graduation cap icon */
+.graduation-icon [data-lucide] {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary-orange);
+}
+
+/* Language button icon */
+.btn-language [data-lucide] {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.25rem;
+}
