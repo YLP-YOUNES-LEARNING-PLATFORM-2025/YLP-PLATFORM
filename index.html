@@ -14,7 +14,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <img src="Home page/logo.png" alt="YLP Logo" class="logo-img">
+            <a href="index.html"><img src="Home page/logo.png" alt="YLP Logo" class="logo-img"></a>
 
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -23,1285 +23,886 @@
             </button>
 
             <ul class="nav-menu">
-                <li><a href="#" class="nav-link" data-page="home">الرئيسية</a></li>
-                <li><a href="#" class="nav-link" data-page="bootcamp">الأسعار</a></li>
-                <li><a href="#" class="nav-link" data-page="about">البرامج التعليمية</a></li>
-                <li><a href="#" class="nav-link" data-page="summer">البرامج الصيفية</a></li>
-                <li><a href="#" class="nav-link" data-page="aboutUs">تعرف علينا</a></li>
+                <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                <li><a href="bootcamp.html" class="nav-link">الأسعار</a></li>
+                <li><a href="educational-programs.html" class="nav-link">البرامج التعليمية</a></li>
+                <li><a href="summer-programs.html" class="nav-link">البرامج الصيفية</a></li>
+                <li><a href="about-us.html" class="nav-link">تعرف علينا</a></li>
                 <li><button class="btn btn-language"><i data-lucide="globe"></i> English</button></li>
                 <li><button class="btn btn-register">تسجيل الدخول</button></li>
             </ul>
         </div>
     </nav>
-    <!-- ========================================
-    HOME PAGE
-    ======================================== -->
-    <div id="home-page">
-        <!-- Hero Section -->
-        <br><br>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-video fade-in">
-                        <img src="Home page/image 1.png" alt="طالب يحمل حقيبة ودفتر" class="hero-image">
+
+    <!-- Hero Section -->
+    <br><br>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-video fade-in">
+                    <img src="Home page/image 1.png" alt="طالب يحمل حقيبة ودفتر" class="hero-image">
+                </div>
+
+                <div class="hero-text fade-in">
+                    <!-- Rating Section -->
+                    <div class="hero-rating">
+                        <div class="rating-stars">
+                            <span class="star"><i data-lucide="star"></i></span>
+                            <span class="star"><i data-lucide="star"></i></span>
+                            <span class="star"><i data-lucide="star"></i></span>
+                            <span class="star"><i data-lucide="star"></i></span>
+                            <span class="star"><i data-lucide="star"></i></span>
+                            <span class="rating-score">4.7/5</span>
+                        </div>
+                        <div class="rating-avatars">
+                            <img src="Home page/pepole1.png" alt="مستخدم" class="avatar-small">
+                            <img src="Home page/pepole2.png" alt="مستخدم" class="avatar-small">
+                            <img src="Home page/pepole3.png" alt="مستخدم" class="avatar-small">
+                            <img src="Home page/pepole4.png" alt="مستخدم" class="avatar-small">
+                        </div>
+                        <p class="rating-text">أكثر من 1000+ طالب يثقون في المنصة</p>
                     </div>
 
-                    <div class="hero-text fade-in">
-                        <!-- Rating Section -->
-                        <div class="hero-rating">
-                            <div class="rating-stars">
-                                <span class="star"><i data-lucide="star"></i></span>
-                                <span class="star"><i data-lucide="star"></i></span>
-                                <span class="star"><i data-lucide="star"></i></span>
-                                <span class="star"><i data-lucide="star"></i></span>
-                                <span class="star"><i data-lucide="star"></i></span>
-                                <span class="rating-score">4.7/5</span>
-                            </div>
-                            <div class="rating-avatars">
-                                <img src="Home page/pepole1.png" alt="مستخدم" class="avatar-small">
-                                <img src="Home page/pepole2.png" alt="مستخدم" class="avatar-small">
-                                <img src="Home page/pepole3.png" alt="مستخدم" class="avatar-small">
-                                <img src="Home page/pepole4.png" alt="مستخدم" class="avatar-small">
-                            </div>
-                            <p class="rating-text">أكثر من 1000+ طالب يثقون في المنصة</p>
-                        </div>
+                    <!-- Main Headline -->
+                    <h1 class="hero-headline">
+                        استثمارك اليوم في مهاراته،
+                        <span class="highlight-orange"> هو ما يصنع مسنقبله غداً</span>
+                    </h1>
 
-                        <!-- Main Headline -->
-                        <h1 class="hero-headline">
-                            استثمارك اليوم في مهاراته،
-                            <span class="highlight-orange"> هو ما يصنع مسنقبله غداً</span>
-                        </h1>
+                    <!-- Bullet Points -->
+                    <ul class="hero-benefits">
+                        <li><span class="icon-check"><i data-lucide="check-circle"></i></span> اكتشف مهارات ابنك من
+                            خلال تعلم ممتع وتطبيقي.</li>
+                        <li><span class="icon-check"><i data-lucide="check-circle"></i></span> مجتمع داعم يحفزه على
+                            التعلم ويبني موهبته.</li>
+                        <li><span class="icon-check"><i data-lucide="check-circle"></i></span> بيئة له عقلية رائد
+                            الأعمال لتساعده على إطلاق مشاريعه الخاصة.</li>
+                        <li><span class="icon-check"><i data-lucide="check-circle"></i></span> نوفر له فرص للمشاركة
+                            في مسابقات محلية وعالمية.</li>
+                    </ul>
 
-                        <!-- Bullet Points -->
-                        <ul class="hero-benefits">
-                            <li><span class="icon-check"><i data-lucide="check-circle"></i></span> اكتشف مهارات ابنك من
-                                خلال تعلم ممتع وتطبيقي.</li>
-                            <li><span class="icon-check"><i data-lucide="check-circle"></i></span> مجتمع داعم يحفزه على
-                                التعلم ويبني موهبته.</li>
-                            <li><span class="icon-check"><i data-lucide="check-circle"></i></span> بيئة له عقلية رائد
-                                الأعمال لتساعده على إطلاق مشاريعه الخاصة.</li>
-                            <li><span class="icon-check"><i data-lucide="check-circle"></i></span> نوفر له فرص للمشاركة
-                                في مسابقات محلية وعالمية.</li>
-                        </ul>
-
-                        <!-- CTA Buttons -->
-                        <div class="hero-buttons">
-                            <button class="btn btn-cta-primary">ابدأ مستقبله</button>
-                            <button class="btn btn-cta-secondary">تعرف علينا</button>
-                        </div>
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <button class="btn btn-cta-primary">ابدأ مستقبله</button>
+                        <a href="about-us.html" class="btn btn-cta-secondary">تعرف علينا</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section class="features section">
-            <div class="container">
-                <h2 class="section-title fade-in">لماذا تختار برنامجنا؟</h2>
-                <p class="section-subtitle fade-in">نقدم لك أفضل البرامج التدريبية لتطوير مهاراتك القيادية والمهنية</p>
+    <!-- Features Section -->
+    <section class="features section">
+        <div class="container">
+            <h2 class="section-title fade-in">لماذا تختار برنامجنا؟</h2>
+            <p class="section-subtitle fade-in">نقدم لك أفضل البرامج التدريبية لتطوير مهاراتك القيادية والمهنية</p>
 
-                <div class="features-grid">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon purple"><i data-lucide="target"></i></div>
-                        <h3>تدريب متخصص</h3>
-                        <p>برامج تدريبية مصممة خصيصاً لتطوير المهارات القيادية والإدارية بأحدث الأساليب العالمية</p>
-                    </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon purple"><i data-lucide="target"></i></div>
+                    <h3>تدريب متخصص</h3>
+                    <p>برامج تدريبية مصممة خصيصاً لتطوير المهارات القيادية والإدارية بأحدث الأساليب العالمية</p>
+                </div>
 
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon orange"><i data-lucide="users"></i></div>
-                        <h3>مدربون محترفون</h3>
-                        <p>فريق من المدربين ذوي الخبرة الواسعة في مجالات القيادة وتطوير الأعمال</p>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon orange"><i data-lucide="users"></i></div>
+                    <h3>مدربون محترفون</h3>
+                    <p>فريق من المدربين ذوي الخبرة الواسعة في مجالات القيادة وتطوير الأعمال</p>
+                </div>
 
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon teal"><i data-lucide="book-open"></i></div>
-                        <h3>محتوى عملي</h3>
-                        <p>تطبيقات عملية ومشاريع حقيقية لضمان اكتساب المهارات بشكل فعال</p>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon teal"><i data-lucide="book-open"></i></div>
+                    <h3>محتوى عملي</h3>
+                    <p>تطبيقات عملية ومشاريع حقيقية لضمان اكتساب المهارات بشكل فعال</p>
+                </div>
 
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon purple"><i data-lucide="trophy"></i></div>
-                        <h3>شهادات معتمدة</h3>
-                        <p>احصل على شهادات معتمدة تعزز من فرصك المهنية في سوق العمل</p>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon purple"><i data-lucide="trophy"></i></div>
+                    <h3>شهادات معتمدة</h3>
+                    <p>احصل على شهادات معتمدة تعزز من فرصك المهنية في سوق العمل</p>
+                </div>
 
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon orange"><i data-lucide="globe"></i></div>
-                        <h3>شبكة واسعة</h3>
-                        <p>انضم إلى مجتمع من القادة الشباب وابنِ علاقات مهنية قوية</p>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon orange"><i data-lucide="globe"></i></div>
+                    <h3>شبكة واسعة</h3>
+                    <p>انضم إلى مجتمع من القادة الشباب وابنِ علاقات مهنية قوية</p>
+                </div>
 
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon teal"><i data-lucide="briefcase"></i></div>
-                        <h3>فرص وظيفية</h3>
-                        <p>نساعدك في الوصول إلى أفضل الفرص الوظيفية من خلال شبكة شركائنا</p>
-                    </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon teal"><i data-lucide="briefcase"></i></div>
+                    <h3>فرص وظيفية</h3>
+                    <p>نساعدك في الوصول إلى أفضل الفرص الوظيفية من خلال شبكة شركائنا</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Why Children Lose Enthusiasm Section -->
-        <section class="section"
-            style="background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-gray-50) 100%); border-top: 3px solid var(--color-primary-orange); border-bottom: 3px solid var(--color-primary-orange); position: relative;">
-            <div class="container">
-                <div style="text-align: center; margin-bottom: var(--spacing-2xl);">
-                    <!-- Sun Icon -->
-                    <div class="fade-in" style="display: inline-block; margin-bottom: var(--spacing-lg);">
-                        <div
-                            style="width: 80px; height: 80px; background: var(--color-primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(249, 115, 22, 0.3);">
-                            <div style="width: 50px; height: 50px; background: #FF6B35; border-radius: 50%;"></div>
-                            <!-- Sun rays -->
-                            <div style="position: absolute; width: 100%; height: 100%;">
-                                <div
-                                    style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); top: -18px; left: 50%; transform: translateX(-50%);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); bottom: -18px; left: 50%; transform: translateX(-50%);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); left: -18px; top: 50%; transform: translateY(-50%);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); right: -18px; top: 50%; transform: translateY(-50%);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; left: 8px; transform: rotate(45deg);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; right: 8px; transform: rotate(-45deg);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; left: 8px; transform: rotate(-45deg);">
-                                </div>
-                                <div
-                                    style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; right: 8px; transform: rotate(45deg);">
-                                </div>
+    <!-- Why Children Lose Enthusiasm Section -->
+    <section class="section"
+        style="background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-gray-50) 100%); border-top: 3px solid var(--color-primary-orange); border-bottom: 3px solid var(--color-primary-orange); position: relative;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--spacing-2xl);">
+                <!-- Sun Icon -->
+                <div class="fade-in" style="display: inline-block; margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 80px; height: 80px; background: var(--color-primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(249, 115, 22, 0.3);">
+                        <div style="width: 50px; height: 50px; background: #FF6B35; border-radius: 50%;"></div>
+                        <!-- Sun rays -->
+                        <div style="position: absolute; width: 100%; height: 100%;">
+                            <div
+                                style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); top: -18px; left: 50%; transform: translateX(-50%);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); bottom: -18px; left: 50%; transform: translateX(-50%);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); left: -18px; top: 50%; transform: translateY(-50%);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); right: -18px; top: 50%; transform: translateY(-50%);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; left: 8px; transform: rotate(45deg);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; right: 8px; transform: rotate(-45deg);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; left: 8px; transform: rotate(-45deg);">
+                            </div>
+                            <div
+                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; right: 8px; transform: rotate(45deg);">
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <h2 class="fade-in"
-                        style="font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
-                        لماذا يفقد معظم <span style="color: var(--color-primary-orange);">الأطفال حماسهم في
-                            التعلم؟</span>
-                    </h2>
-                    <p class="fade-in"
-                        style="font-size: var(--font-size-base); color: var(--color-gray-600); max-width: 600px; margin: 0 auto;">
-                        الأمر ببساطة لا يجدون ما يناسب طريقتهم في الفهم والتقدم
+                <h2 class="fade-in"
+                    style="font-size: var(--font-size-3xl); font-weight: 800; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
+                    لماذا يفقد معظم <span style="color: var(--color-primary-orange);">الأطفال حماسهم في
+                        التعلم؟</span>
+                </h2>
+                <p class="fade-in"
+                    style="font-size: var(--font-size-base); color: var(--color-gray-600); max-width: 600px; margin: 0 auto;">
+                    الأمر ببساطة لا يجدون ما يناسب طريقتهم في الفهم والتقدم
+                </p>
+            </div>
+
+            <h3 class="fade-in"
+                style="text-align: center; font-size: var(--font-size-xl); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-2xl);">
+                ما يحتاجه طفلك فعلياً
+            </h3>
+
+            <!-- Features Grid -->
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl);">
+                <!-- Feature 1 -->
+                <div class="feature-card fade-in"
+                    style="text-align: center; border-top: 3px solid var(--color-gray-300);">
+                    <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="users"
+                            style="width: 50px; height: 50px;"></i></div>
+                    <h4
+                        style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
+                        دعم مستمر وتوجيه شخصي
+                    </h4>
+                    <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
+                        يشعر أن هناك من يهتم بتقدمه
                     </p>
                 </div>
 
-                <h3 class="fade-in"
-                    style="text-align: center; font-size: var(--font-size-xl); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-2xl);">
-                    ما يحتاجه طفلك فعلياً
+                <!-- Feature 2 -->
+                <div class="feature-card fade-in"
+                    style="text-align: center; border-top: 3px solid var(--color-primary-purple);">
+                    <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="target"
+                            style="width: 50px; height: 50px;"></i></div>
+                    <h4
+                        style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
+                        مساحة آمنة ومشجعة
+                    </h4>
+                    <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
+                        يشعر فيها بعدم الأمان ويتعلم من أخطائه
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card fade-in"
+                    style="text-align: center; border-top: 3px solid var(--color-primary-pink);">
+                    <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="flask-conical"
+                            style="width: 50px; height: 50px;"></i></div>
+                    <h4
+                        style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
+                        بيئة تشجعه على الإبداع
+                    </h4>
+                    <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
+                        ويجرب معرفته في تجربة حقيقية
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card fade-in"
+                    style="text-align: center; border-top: 3px solid var(--color-primary-orange);">
+                    <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="rocket"
+                            style="width: 50px; height: 50px;"></i></div>
+                    <h4
+                        style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
+                        خطة تعليمية واضحة
+                    </h4>
+                    <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
+                        ليرى أن هو الذي يقرر أين أن يسير
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" style="background: var(--color-gray-50); ">
+        <div class="container">
+            <h2 class="section-title fade-in">كيف يعمل البرنامج؟</h2>
+            <p class="section-subtitle fade-in">منهجية متطورة تجمع بين التعليم النظري والتطبيق العملي</p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-2xl);">
+                <div class="fade-in" style="order: 2;">
+                    <img src="Home page/image-6.png" alt="التكنولوجيا والذكاء الاصطناعي"
+                        style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                </div>
+
+                <div style="order: 1;">
+                    <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--color-primary-purple); margin-bottom: var(--spacing-sm);">١. التعلم
+                            التفاعلي</h3>
+                        <p>جلسات تدريبية تفاعلية مع مدربين خبراء باستخدام أحدث التقنيات التعليمية</p>
+                    </div>
+
+                    <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
+                        <h3 style="color: var(--color-primary-orange); margin-bottom: var(--spacing-sm);">٢. التطبيق
+                            العملي</h3>
+                        <p>مشاريع حقيقية وتحديات عملية لتطبيق ما تعلمته مباشرة</p>
+                    </div>
+
+                    <div class="feature-card fade-in">
+                        <h3 style="color: var(--color-primary-teal); margin-bottom: var(--spacing-sm);">٣. التقييم
+                            المستمر</h3>
+                        <p>متابعة دورية وتقييم مستمر لضمان تحقيق أهدافك التعليمية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Experience Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">تجربة تعليمية متكاملة</h2>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl); margin-top: var(--spacing-2xl);">
+                <div class="feature-card fade-in" style="text-align: center;">
+                    <img src="Home page/image-1.png" alt="طالب يدرس"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
+                    <h3>تعلم مرن</h3>
+                    <p>ادرس في الوقت الذي يناسبك مع محتوى متاح على مدار الساعة</p>
+                </div>
+
+                <div class="feature-card fade-in" style="text-align: center;">
+                    <img src="Home page/image-2.png" alt="طالب يكتب"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
+                    <h3>تمارين عملية</h3>
+                    <p>اختبر معرفتك من خلال تمارين وتطبيقات عملية متنوعة</p>
+                </div>
+
+                <div class="feature-card fade-in" style="text-align: center;">
+                    <img src="Home page/image-3.png" alt="طالب مع سماعات"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
+                    <h3>دعم مستمر</h3>
+                    <p>فريق دعم متاح دائماً للإجابة على استفساراتك ومساعدتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Different Learning Experience Section -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-3xl); align-items: center;">
+                <!-- Content -->
+                <div class="fade-in" style="order: 2;">
+                    <h2
+                        style="font-size: var(--font-size-4xl); font-weight: 800; margin-bottom: var(--spacing-md); background: var(--gradient-purple-orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        لهذا صممنا لك في YLP
+                    </h2>
+                    <h3
+                        style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-primary-orange); margin-bottom: var(--spacing-lg);">
+                        تجربة تعليمية مختلفة
+                    </h3>
+
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li
+                            style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
+                            <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
+                                    data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
+                            نجري اختبارات لتحديد مهارات طفلك في التفكير والتحليل، وحل المشكلات، والإبداع، وبناء كل
+                            ما يحتاج لمنهج تعليمي مناسبة لتسير به خطوة بخطوة نحو هدفه واضح ويمكن أن يصنع قدرًا على.
+                        </li>
+                        <li
+                            style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
+                            <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
+                                    data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
+                            التفكير بطريقة إبداعية متجددة
+                        </li>
+                        <li
+                            style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
+                            <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
+                                    data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
+                            اكتساب مهارات سوق العمل
+                        </li>
+                        <li
+                            style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
+                            <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
+                                    data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
+                            يتعلم كيف يبدأ مشروعه الخاص ويحوله إلى شركة يمكن تطويرها
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-cta-primary" style="margin-top: var(--spacing-lg);">
+                        ابدأ مستقبلك
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div class="fade-in" style="order: 2;">
+                    <img src="Home page/image 15.png" alt="لهذا صممنا لك في YLP"
+                        style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics & Achievements Section -->
+    <section class="section" style="background: var(--color-white);">
+        <div class="container">
+            <!-- Top Section with Star Icon -->
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <div
+                    style="display: inline-flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
+                    <span style="font-size: var(--font-size-3xl);"><i data-lucide="star"
+                            style="width: 30px; height: 30px; color: #fbbf24; fill: #fbbf24;"></i></span>
+                    <p style="font-size: var(--font-size-lg); color: var(--color-gray-700); margin: 0;">
+                        هدفنا هو أن نساعد طفلك على اكتشاف موهبته وتطوير مهاراته،<br>
+                        ليكون مستعداً لمستقبل قوته التكنولوجيا والإبداع
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gradient Stats Box -->
+            <div class="fade-in"
+                style="background: linear-gradient(135deg, #7C3AED 0%, #DB2777 50%, #EA580C 100%); border-radius: 24px; padding: 4rem 2rem; color: white; position: relative; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
+
+                <!-- Background Decoration -->
+                <div
+                    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 20%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 20%); pointer-events: none;">
+                </div>
+
+                <!-- Watermark Icon -->
+                <div style="position: absolute; left: -20px; bottom: -40px; opacity: 0.1; transform: rotate(15deg);">
+                    <i data-lucide="zap" style="width: 250px; height: 250px; color: white;"></i>
+                </div>
+
+                <div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 5rem;">
+                        <h2
+                            style="font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <span style="color: white;">نتائج نفخر بتحقيقها، </span>
+                            <span style="color: #FBBF24;">والرحلة ما زالت مستمرة...</span>
+                        </h2>
+                        <p
+                            style="font-size: 1.4rem; font-weight: 500; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                            خطوات مدروسة تصنع فارقاً في مستقبل طفلك
+                        </p>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                        <!-- Stat 1 -->
+                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
+                            <div
+                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <i data-lucide="users" style="width: 30px; height: 30px; color: white;"></i>
+                            </div>
+                            <div
+                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                ٥٠٠٠+</div>
+                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">طالب تدرب ونجح
+                                معنا</p>
+                        </div>
+
+                        <!-- Stat 2 -->
+                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
+                            <div
+                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <i data-lucide="user-check" style="width: 30px; height: 30px; color: white;"></i>
+                            </div>
+                            <div
+                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                ٦٠+</div>
+                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">مدرب محترف</p>
+                        </div>
+
+                        <!-- Stat 3 -->
+                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
+                            <div
+                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <i data-lucide="clock" style="width: 30px; height: 30px; color: white;"></i>
+                            </div>
+                            <div
+                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                ٣٠٠٠٠+</div>
+                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">ساعة تدريبية</p>
+                        </div>
+
+                        <!-- Stat 4 -->
+                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
+                            <div
+                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <i data-lucide="refresh-cw" style="width: 30px; height: 30px; color: white;"></i>
+                            </div>
+                            <div
+                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                ٩٦٪</div>
+                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">نسبة تجديد
+                                الاشتراك</p>
+                        </div>
+
+                        <!-- Stat 5 -->
+                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
+                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
+                            <div
+                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                <i data-lucide="smile" style="width: 30px; height: 30px; color: white;"></i>
+                            </div>
+                            <div
+                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                ٤.٩</div>
+                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">رضا العملاء (من ٥)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards Section -->
+            <div class="fade-in" style="margin-top: var(--spacing-2xl);">
+                <h3
+                    style="text-align: center; font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-xl);">
+                    جوائز نفتخر بها
                 </h3>
 
-                <!-- Features Grid -->
                 <div
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl);">
-                    <!-- Feature 1 -->
-                    <div class="feature-card fade-in"
-                        style="text-align: center; border-top: 3px solid var(--color-gray-300);">
-                        <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="users"
-                                style="width: 50px; height: 50px;"></i></div>
-                        <h4
-                            style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
-                            دعم مستمر وتوجيه شخصي
+                    <div class="feature-card" style="text-align: center;">
+                        <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
+                                style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
+                        <h4 style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                            لقاء الأول في مسابقة
                         </h4>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
-                            يشعر أن هناك من يهتم بتقدمه
+                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                            مبادرة لأفضل الأفكار الابتكارية للأطفال والشباب/جامعة
                         </p>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div class="feature-card fade-in"
-                        style="text-align: center; border-top: 3px solid var(--color-primary-purple);">
-                        <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="target"
-                                style="width: 50px; height: 50px;"></i></div>
-                        <h4
-                            style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
-                            مساحة آمنة ومشجعة
+                    <div class="feature-card" style="text-align: center;">
+                        <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
+                                style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
+                        <h4 style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                            لفوز الأول في الوطن العربي
                         </h4>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
-                            يشعر فيها بعدم الأمان ويتعلم من أخطائه
+                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                            مبادرة لأفضل الأفكار الابتكارية - أبو ظبي
                         </p>
                     </div>
 
-                    <!-- Feature 3 -->
-                    <div class="feature-card fade-in"
-                        style="text-align: center; border-top: 3px solid var(--color-primary-pink);">
-                        <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="flask-conical"
-                                style="width: 50px; height: 50px;"></i></div>
-                        <h4
-                            style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
-                            بيئة تشجعه على الإبداع
+                    <div class="feature-card" style="text-align: center;">
+                        <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
+                                style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
+                        <h4 style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
+                            لفوز الأول في مسابقة
                         </h4>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
-                            ويجرب معرفته في تجربة حقيقية
-                        </p>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="feature-card fade-in"
-                        style="text-align: center; border-top: 3px solid var(--color-primary-orange);">
-                        <div style="font-size: 50px; margin-bottom: var(--spacing-md);"><i data-lucide="rocket"
-                                style="width: 50px; height: 50px;"></i></div>
-                        <h4
-                            style="font-size: var(--font-size-lg); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-sm);">
-                            خطة تعليمية واضحة
-                        </h4>
-                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600); line-height: 1.6;">
-                            ليرى أن هو الذي يقرر أين أن يسير
+                        <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
+                            مبادرة لأفضل الأفكار الابتكارية والإبداعية
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- How It Works Section -->
-        <section class="section" style="background: var(--color-gray-50); ">
-            <div class="container">
-                <h2 class="section-title fade-in">كيف يعمل البرنامج؟</h2>
-                <p class="section-subtitle fade-in">منهجية متطورة تجمع بين التعليم النظري والتطبيق العملي</p>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); align-items: center; margin-top: var(--spacing-2xl);">
-                    <div class="fade-in" style="order: 2;">
-                        <img src="Home page/image-6.png" alt="التكنولوجيا والذكاء الاصطناعي"
-                            style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
-                    </div>
-
-                    <div style="order: 1;">
-                        <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
-                            <h3 style="color: var(--color-primary-purple); margin-bottom: var(--spacing-sm);">١. التعلم
-                                التفاعلي</h3>
-                            <p>جلسات تدريبية تفاعلية مع مدربين خبراء باستخدام أحدث التقنيات التعليمية</p>
-                        </div>
-
-                        <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
-                            <h3 style="color: var(--color-primary-orange); margin-bottom: var(--spacing-sm);">٢. التطبيق
-                                العملي</h3>
-                            <p>مشاريع حقيقية وتحديات عملية لتطبيق ما تعلمته مباشرة</p>
-                        </div>
-
-                        <div class="feature-card fade-in">
-                            <h3 style="color: var(--color-primary-teal); margin-bottom: var(--spacing-sm);">٣. التقييم
-                                المستمر</h3>
-                            <p>متابعة دورية وتقييم مستمر لضمان تحقيق أهدافك التعليمية</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Learning Experience Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">تجربة تعليمية متكاملة</h2>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl); margin-top: var(--spacing-2xl);">
-                    <div class="feature-card fade-in" style="text-align: center;">
-                        <img src="Home page/image-1.png" alt="طالب يدرس"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
-                        <h3>تعلم مرن</h3>
-                        <p>ادرس في الوقت الذي يناسبك مع محتوى متاح على مدار الساعة</p>
-                    </div>
-
-                    <div class="feature-card fade-in" style="text-align: center;">
-                        <img src="Home page/image-2.png" alt="طالب يكتب"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
-                        <h3>تمارين عملية</h3>
-                        <p>اختبر معرفتك من خلال تمارين وتطبيقات عملية متنوعة</p>
-                    </div>
-
-                    <div class="feature-card fade-in" style="text-align: center;">
-                        <img src="Home page/image-3.png" alt="طالب مع سماعات"
-                            style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
-                        <h3>دعم مستمر</h3>
-                        <p>فريق دعم متاح دائماً للإجابة على استفساراتك ومساعدتك</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Different Learning Experience Section -->
-        <section class="section" style="background: var(--color-gray-50);">
-            <div class="container">
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-3xl); align-items: center;">
-                    <!-- Content -->
-                    <div class="fade-in" style="order: 2;">
-                        <h2
-                            style="font-size: var(--font-size-4xl); font-weight: 800; margin-bottom: var(--spacing-md); background: var(--gradient-purple-orange); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                            لهذا صممنا لك في YLP
-                        </h2>
-                        <h3
-                            style="font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-primary-orange); margin-bottom: var(--spacing-lg);">
-                            تجربة تعليمية مختلفة
-                        </h3>
-
-                        <ul style="list-style: none; padding: 0; margin: 0;">
-                            <li
-                                style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
-                                <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
-                                        data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
-                                نجري اختبارات لتحديد مهارات طفلك في التفكير والتحليل، وحل المشكلات، والإبداع، وبناء كل
-                                ما يحتاج لمنهج تعليمي مناسبة لتسير به خطوة بخطوة نحو هدفه واضح ويمكن أن يصنع قدرًا على.
-                            </li>
-                            <li
-                                style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
-                                <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
-                                        data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
-                                التفكير بطريقة إبداعية متجددة
-                            </li>
-                            <li
-                                style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
-                                <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
-                                        data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
-                                اكتساب مهارات سوق العمل
-                            </li>
-                            <li
-                                style="font-size: var(--font-size-base); color: var(--color-gray-700); margin-bottom: var(--spacing-md); line-height: 1.8; padding-right: var(--spacing-lg); position: relative;">
-                                <span style="position: absolute; right: 0; color: var(--color-primary-orange);"><i
-                                        data-lucide="check-circle" style="width: 20px; height: 20px;"></i></span>
-                                يتعلم كيف يبدأ مشروعه الخاص ويحوله إلى شركة يمكن تطويرها
-                            </li>
-                        </ul>
-
-                        <button class="btn btn-cta-primary" style="margin-top: var(--spacing-lg);">
-                            ابدأ مستقبلك
-                        </button>
-                    </div>
-
-                    <!-- Image -->
-                    <div class="fade-in" style="order: 2;">
-                        <img src="Home page/image 15.png" alt="لهذا صممنا لك في YLP"
-                            style="width: 100%; border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl);">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statistics & Achievements Section -->
-        <section class="section" style="background: var(--color-white);">
-            <div class="container">
-                <!-- Top Section with Star Icon -->
-                <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                    <div
-                        style="display: inline-flex; align-items: center; gap: var(--spacing-md); margin-bottom: var(--spacing-md);">
-                        <span style="font-size: var(--font-size-3xl);"><i data-lucide="star"
-                                style="width: 30px; height: 30px; color: #fbbf24; fill: #fbbf24;"></i></span>
-                        <p style="font-size: var(--font-size-lg); color: var(--color-gray-700); margin: 0;">
-                            هدفنا هو أن نساعد طفلك على اكتشاف موهبته وتطوير مهاراته،<br>
-                            ليكون مستعداً لمستقبل قوته التكنولوجيا والإبداع
-                        </p>
-                    </div>
+    <!-- DUB Program Section -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-3xl); align-items: center;">
+                <!-- Panda Image -->
+                <div class="fade-in" style="text-align: center; order: 2;">
+                    <img src="Home page/panda.png" alt="هذا هو الدب الذي تعرفه"
+                        style="width: 100%; max-width: 400px; margin: 0 auto; border-radius: var(--radius-2xl);">
                 </div>
 
-                <!-- Gradient Stats Box -->
-                <div class="fade-in"
-                    style="background: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #F97316 100%); border-radius: var(--radius-2xl); padding: var(--spacing-3xl); color: white; position: relative; overflow: hidden; box-shadow: var(--shadow-2xl);">
-                    <!-- Lightning Icon -->
-                    <div
-                        style="position: absolute; left: var(--spacing-xl); top: 50%; transform: translateY(-50%); font-size: 80px; opacity: 0.3;">
-                        <i data-lucide="zap" style="width: 80px; height: 80px;"></i>
-                    </div>
-
-                    <div style="position: relative; z-index: 1;">
-                        <h2
-                            style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs); text-align: center;">
-                            نتائج <span style="color: #FEF3C7;">تفخر بتحقيقها الأرقام</span> بأنك <span
-                                style="color: #A7F3D0;">زادت مستمرة</span>
-                        </h2>
-                        <p
-                            style="text-align: center; font-size: var(--font-size-base); opacity: 0.9; margin-bottom: var(--spacing-2xl);">
-                            خبرات تدريبية تصنع فارقاً ملموساً في حياة طلابنا في المستقبل، شاهدنا
-                        </p>
-
-                        <!-- Stats Grid -->
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-xl); margin-bottom: var(--spacing-xl);">
-                            <div style="text-align: center;">
-                                <div style="font-size: 40px; margin-bottom: var(--spacing-xs);"><i data-lucide="users"
-                                        style="width: 40px; height: 40px;"></i></div>
-                                <div
-                                    style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs);">
-                                    ٥٠٠٠+</div>
-                                <p style="font-size: var(--font-size-sm); opacity: 0.9; margin: 0;">طالب تدرب ونجح معنا
-                                </p>
-                            </div>
-
-                            <div style="text-align: center;">
-                                <div style="font-size: 40px; margin-bottom: var(--spacing-xs);"><i
-                                        data-lucide="user-check" style="width: 40px; height: 40px;"></i></div>
-                                <div
-                                    style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs);">
-                                    ٦٠+</div>
-                                <p style="font-size: var(--font-size-sm); opacity: 0.9; margin: 0;">مدرب لدينا</p>
-                            </div>
-
-                            <div style="text-align: center;">
-                                <div style="font-size: 40px; margin-bottom: var(--spacing-xs);"><i data-lucide="clock"
-                                        style="width: 40px; height: 40px;"></i></div>
-                                <div
-                                    style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs);">
-                                    ٣٠٠٠٠+</div>
-                                <p style="font-size: var(--font-size-sm); opacity: 0.9; margin: 0;">ساعة من التدريب
-                                    والتعليم</p>
-                            </div>
-
-                            <div style="text-align: center;">
-                                <div style="font-size: 40px; margin-bottom: var(--spacing-xs);"><i
-                                        data-lucide="refresh-cw" style="width: 40px; height: 40px;"></i></div>
-                                <div
-                                    style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs);">
-                                    ٩٦٪</div>
-                                <p style="font-size: var(--font-size-sm); opacity: 0.9; margin: 0;">من الأهالي يجددون
-                                    اشتراكهم معنا</p>
-                            </div>
-
-                            <div style="text-align: center;">
-                                <div style="font-size: 40px; margin-bottom: var(--spacing-xs);"><i data-lucide="smile"
-                                        style="width: 40px; height: 40px;"></i></div>
-                                <div
-                                    style="font-size: var(--font-size-3xl); font-weight: 800; margin-bottom: var(--spacing-xs);">
-                                    ٦</div>
-                                <p style="font-size: var(--font-size-sm); opacity: 0.9; margin: 0;">نقاط تقييم رضا
-                                    العملاء</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Awards Section -->
-                <div class="fade-in" style="margin-top: var(--spacing-2xl);">
-                    <h3
-                        style="text-align: center; font-size: var(--font-size-2xl); font-weight: 700; color: var(--color-gray-900); margin-bottom: var(--spacing-xl);">
-                        جوائز نفتخر بها
-                    </h3>
-
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl);">
-                        <div class="feature-card" style="text-align: center;">
-                            <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
-                                    style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
-                            <h4
-                                style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
-                                لقاء الأول في مسابقة
-                            </h4>
-                            <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
-                                مبادرة لأفضل الأفكار الابتكارية للأطفال والشباب/جامعة
-                            </p>
-                        </div>
-
-                        <div class="feature-card" style="text-align: center;">
-                            <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
-                                    style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
-                            <h4
-                                style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
-                                لفوز الأول في الوطن العربي
-                            </h4>
-                            <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
-                                مبادرة لأفضل الأفكار الابتكارية - أبو ظبي
-                            </p>
-                        </div>
-
-                        <div class="feature-card" style="text-align: center;">
-                            <div style="font-size: 60px; margin-bottom: var(--spacing-md);"><i data-lucide="trophy"
-                                    style="width: 60px; height: 60px; color: #fbbf24;"></i></div>
-                            <h4
-                                style="font-size: var(--font-size-lg); font-weight: 700; margin-bottom: var(--spacing-sm);">
-                                لفوز الأول في مسابقة
-                            </h4>
-                            <p style="font-size: var(--font-size-sm); color: var(--color-gray-600);">
-                                مبادرة لأفضل الأفكار الابتكارية والإبداعية
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DUB Program Section -->
-        <section class="section" style="background: var(--color-gray-50);">
-            <div class="container">
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-3xl); align-items: center;">
-                    <!-- Panda Image -->
-                    <div class="fade-in" style="text-align: center; order: 2;">
-                        <img src="Home page/panda.png" alt="هذا هو الدب الذي تعرفه"
-                            style="width: 100%; max-width: 400px; margin: 0 auto; border-radius: var(--radius-2xl);">
-                    </div>
-
-                    <!-- Content -->
-                    <div class="fade-in" style="order:1 ;">
-                        <h2
-                            style="font-size: var(--font-size-4xl); font-weight: 800; margin-bottom: var(--spacing-md);">
-                            هذا هو <span style="color: var(--color-primary-orange);">الدب الذي تعرفه</span>
-                        </h2>
-                        <p
-                            style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin-bottom: var(--spacing-xl);">
-                            لكن دب في YLP هو رمز رحلتنا التعليمية لاكتشاف قدرات طفلك، فمثلما في YLP صممنا لك برنامج DUB
-                            بثلاث مراحل مترابطة
-                        </p>
-
-                        <!-- DUB Methodology Cards -->
-                        <div style="display: grid; gap: var(--spacing-lg);">
-                            <!-- Discover -->
-                            <div class="feature-card" style="border-right: 4px solid var(--color-primary-purple);">
-                                <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
-                                    <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="sparkles"
-                                            style="width: 40px; height: 40px; color: var(--color-primary-purple);"></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
-                                            Discover - مرحلة الاكتشاف
-                                        </h3>
-                                        <p
-                                            style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
-                                            نجري اختبار لتقييم مهارات طفلك ونحدد نقاط قوته ومواطن تحسينه، ثم نضع خطة
-                                            تعليمية مناسبة
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Utilize -->
-                            <div class="feature-card" style="border-right: 4px solid var(--color-primary-orange);">
-                                <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
-                                    <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="target"
-                                            style="width: 40px; height: 40px; color: var(--color-primary-orange);"></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
-                                            Utilize - مرحلة توظيف لمهارات
-                                        </h3>
-                                        <p
-                                            style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
-                                            يختار الطفل مشاريع يطبق فيها ما تعلمه ضمن بيئة آمنة للعمل الجماعي والتواصل،
-                                            والقيادة وتحمل المسؤولية
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Build -->
-                            <div class="feature-card" style="border-right: 4px solid var(--color-primary-teal);">
-                                <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
-                                    <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="hammer"
-                                            style="width: 40px; height: 40px; color: var(--color-primary-teal);"></i>
-                                    </div>
-                                    <div>
-                                        <h3
-                                            style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
-                                            Build - مرحلة البناء
-                                        </h3>
-                                        <p
-                                            style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
-                                            اكتسب مهارات من خلال تجربة الإبداعية أو المشاريع الحقيقية، ويتعلم الطفل
-                                            كيفية إدارة المشاريع والتعاون
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials section">
-            <div class="container">
-                <h2 class="section-title fade-in">قصص نجاح المشاركين</h2>
-                <p class="section-subtitle fade-in">استمع إلى تجارب من سبقوك في رحلة التطوير والنجاح</p>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header">
-                            <img src="Home page/image-2.png" alt="أحمد محمد" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h4>أحمد محمد</h4>
-                                <p>مدير مشاريع</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"البرنامج غير حياتي المهنية بالكامل. اكتسبت مهارات قيادية لم أكن
-                            أتخيل أنني سأمتلكها. الآن أقود فريقاً من 20 شخصاً بكل ثقة."</p>
-                    </div>
-
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header">
-                            <img src="Home page/image-4.png" alt="سارة أحمد" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h4>سارة أحمد</h4>
-                                <p>رائدة أعمال</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"تجربة استثنائية! المحتوى العملي والمدربون المحترفون ساعدوني في
-                            إطلاق مشروعي الخاص بنجاح. أنصح الجميع بالانضمام."</p>
-                    </div>
-
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header">
-                            <img src="Home page/image-7.png" alt="خالد عبدالله" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h4>خالد عبدالله</h4>
-                                <p>مستشار تطوير</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text">"أفضل استثمار في مستقبلي المهني. الشبكة التي بنيتها من خلال البرنامج
-                            فتحت لي أبواباً كثيرة في مجال عملي."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="section"
-            style="background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-primary-orange) 100%); color: white;">
-            <div class="container text-center">
-                <h2 class="fade-in"
-                    style="font-size: var(--font-size-4xl); font-weight: 800; margin-bottom: var(--spacing-md); color: white;">
-                    هل أنت مستعد لبدء رحلتك؟</h2>
-                <p class="fade-in"
-                    style="font-size: var(--font-size-xl); margin-bottom: var(--spacing-xl); opacity: 0.9;">انضم إلى
-                    آلاف القادة الشباب الذين طوروا مهاراتهم معنا</p>
-                <button class="btn fade-in"
-                    style="background: white; color: var(--color-primary-purple); font-size: var(--font-size-lg); padding: var(--spacing-md) var(--spacing-2xl);">سجل
-                    الآن مجاناً</button>
-            </div>
-        </section>
-    </div>
-
-    <!-- ========================================
-         BOOTCAMP PAGE
-         ======================================== -->
-    <div id="bootcamp-page" class="hidden">
-        <!-- Bootcamp Hero -->
-        <section class="hero" style="min-height: 60vh;">
-            <div class="container">
-                <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
-                    <div class="hero-text fade-in">
-                        <h1>البوتكامب التدريبي</h1>
-                        <p>برنامج تدريبي مكثف لمدة 12 أسبوعاً لتطوير مهاراتك القيادية والمهنية</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bootcamp Features -->
-        <section class="features section">
-            <div class="container">
-                <h2 class="section-title fade-in">ماذا ستتعلم؟</h2>
-
-                <div class="features-grid">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon purple"><i data-lucide="graduation-cap"></i></div>
-                        <h3>القيادة الاستراتيجية</h3>
-                        <p>تعلم كيفية وضع الاستراتيجيات وقيادة الفرق نحو تحقيق الأهداف</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon orange"><i data-lucide="lightbulb"></i></div>
-                        <h3>الابتكار والإبداع</h3>
-                        <p>طور مهارات التفكير الإبداعي وحل المشكلات بطرق مبتكرة</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon teal"><i data-lucide="bar-chart-3"></i></div>
-                        <h3>إدارة المشاريع</h3>
-                        <p>اكتسب مهارات إدارة المشاريع باستخدام أحدث المنهجيات</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon purple"><i data-lucide="message-circle"></i></div>
-                        <h3>التواصل الفعال</h3>
-                        <p>تطوير مهارات التواصل والعرض والتقديم أمام الجمهور</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon orange"><i data-lucide="handshake"></i></div>
-                        <h3>بناء الفرق</h3>
-                        <p>تعلم كيفية بناء وإدارة فرق عمل عالية الأداء</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon teal"><i data-lucide="trending-up"></i></div>
-                        <h3>التطوير الذاتي</h3>
-                        <p>استراتيجيات التطوير المستمر والنمو الشخصي والمهني</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Program Timeline -->
-        <section class="section" style="background: var(--color-gray-50);">
-            <div class="container">
-                <h2 class="section-title fade-in">البرنامج التدريبي</h2>
-                <p class="section-subtitle fade-in">12 أسبوعاً من التدريب المكثف والعملي</p>
-
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
-                        <h3 style="color: var(--color-primary-purple); margin-bottom: var(--spacing-sm);">الأسابيع 1-4:
-                            الأساسيات</h3>
-                        <p>مقدمة في القيادة، مهارات التواصل، والتفكير الاستراتيجي</p>
-                    </div>
-
-                    <div class="feature-card fade-in" style="margin-bottom: var(--spacing-lg);">
-                        <h3 style="color: var(--color-primary-orange); margin-bottom: var(--spacing-sm);">الأسابيع 5-8:
-                            التطبيق العملي</h3>
-                        <p>مشاريع عملية، إدارة الفرق، وحل المشكلات الواقعية</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <h3 style="color: var(--color-primary-teal); margin-bottom: var(--spacing-sm);">الأسابيع 9-12:
-                            المشروع النهائي</h3>
-                        <p>تطبيق شامل لكل ما تعلمته في مشروع قيادي متكامل</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">خطط الاشتراك</h2>
-
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl); max-width: 1000px; margin: 0 auto;">
-                    <div class="feature-card fade-in" style="text-align: center;">
-                        <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-sm);">الخطة الأساسية
-                        </h3>
-                        <div
-                            style="font-size: var(--font-size-4xl); font-weight: 800; color: var(--color-primary-purple); margin: var(--spacing-lg) 0;">
-                            $299</div>
-                        <ul style="text-align: right; list-style: none; margin-bottom: var(--spacing-lg);">
-                            <li style="margin-bottom: var(--spacing-xs);">✓ الوصول إلى جميع المحاضرات</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ المواد التعليمية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ شهادة إتمام</li>
-                        </ul>
-                        <button class="btn btn-secondary" style="width: 100%;">اختر الخطة</button>
-                    </div>
-
-                    <div class="feature-card fade-in"
-                        style="text-align: center; border: 3px solid var(--color-primary-purple); position: relative;">
-                        <div
-                            style="position: absolute; top: -15px; right: 50%; transform: translateX(50%); background: var(--gradient-purple-orange); color: white; padding: var(--spacing-xs) var(--spacing-md); border-radius: var(--radius-full); font-weight: 700; font-size: var(--font-size-sm);">
-                            الأكثر شعبية</div>
-                        <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-sm);">الخطة الاحترافية
-                        </h3>
-                        <div
-                            style="font-size: var(--font-size-4xl); font-weight: 800; color: var(--color-primary-purple); margin: var(--spacing-lg) 0;">
-                            $499</div>
-                        <ul style="text-align: right; list-style: none; margin-bottom: var(--spacing-lg);">
-                            <li style="margin-bottom: var(--spacing-xs);">✓ كل مميزات الخطة الأساسية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ جلسات توجيه فردية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ الوصول إلى الشبكة المهنية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ دعم مستمر بعد البرنامج</li>
-                        </ul>
-                        <button class="btn btn-primary" style="width: 100%;">اختر الخطة</button>
-                    </div>
-
-                    <div class="feature-card fade-in" style="text-align: center;">
-                        <h3 style="font-size: var(--font-size-2xl); margin-bottom: var(--spacing-sm);">الخطة المتقدمة
-                        </h3>
-                        <div
-                            style="font-size: var(--font-size-4xl); font-weight: 800; color: var(--color-primary-purple); margin: var(--spacing-lg) 0;">
-                            $799</div>
-                        <ul style="text-align: right; list-style: none; margin-bottom: var(--spacing-lg);">
-                            <li style="margin-bottom: var(--spacing-xs);">✓ كل مميزات الخطة الاحترافية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ برنامج توجيه مخصص</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ فرص توظيف حصرية</li>
-                            <li style="margin-bottom: var(--spacing-xs);">✓ ورش عمل متقدمة</li>
-                        </ul>
-                        <button class="btn btn-secondary" style="width: 100%;">اختر الخطة</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ========================================
-         ABOUT PAGE (البرامج التعليمية)
-         ======================================== -->
-    <div id="about-page" class="hidden">
-        <!-- Educational Programs Hero -->
-        <br><br>
-        <section class="hero" style="min-height: 60vh;">
-            <div class="container">
-                <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
-                    <div class="hero-text fade-in">
-                        <h1>البرامج التعليمية</h1>
-                        <p>قريباً... سنعرض لكم برامجنا التعليمية المتميزة</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ========================================
-    SUMMER PROGRAMS PAGE (البرامج الصيفية)
-    ======================================== -->
-    <div id="summer-page" class="hidden">
-        <!-- Summer Programs Hero -->
-        <br><br>
-        <section class="summer-section">
-            <div class="summer-container">
-                <!-- Header with Title and Icons -->
-                <div class="summer-header">
-                    <!-- Left Icon (Orange Circle) -->
-                    <div class="summer-icon-left">
-                        <div class="summer-icon-inner"></div>
-                    </div>
-
-                    <!-- Center Content -->
-                    <div class="summer-center-content">
-                        <p class="summer-program-label">برنامج Tech Teen Camp</p>
-
-                        <!-- Main Headline -->
-                        <h1 class="summer-headline">
-                            لأول مرة في صعيد مصر...
-                        </h1>
-
-                        <!-- Subtitle -->
-                        <h2 class="summer-subtitle">فرصة لا تُعوض</h2>
-                    </div>
-
-                    <!-- Right Icon (Network/Gear) -->
-                    <div class="summer-icon-right">
-                        <svg viewBox="0 0 100 100" class="summer-network-icon">
-                            <circle cx="50" cy="50" r="45" fill="none" stroke="#FF6B35" stroke-width="3" />
-                            <circle cx="50" cy="25" r="8" fill="#FF6B35" />
-                            <circle cx="25" cy="65" r="8" fill="#FF6B35" />
-                            <circle cx="75" cy="65" r="8" fill="#FF6B35" />
-                            <line x1="50" y1="33" x2="25" y2="57" stroke="#FF6B35" stroke-width="3" />
-                            <line x1="50" y1="33" x2="75" y2="57" stroke="#FF6B35" stroke-width="3" />
-                            <line x1="33" y1="65" x2="67" y2="65" stroke="#FF6B35" stroke-width="3" />
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Description and Logo Row -->
-                <div class="summer-info-row text-align: center">
-                    <!-- Logo -->
-                    <div class="summer-logo">
-                        <img src="boot camp/image 2.png" alt="Tech Teen Camp Logo">
-                    </div>
-                    <!-- Description Text -->
-                    <p class="summer-description ">
-                        برنامج تدريب صيفي أوفلاين لأول مرة في 6 محافظات<br>
-                        في الصعيد ببرامج تدريبية في مجالات
+                <!-- Content -->
+                <div class="fade-in" style="order:1 ;">
+                    <h2 style="font-size: var(--font-size-4xl); font-weight: 800; margin-bottom: var(--spacing-md);">
+                        هذا هو <span style="color: var(--color-primary-orange);">الدب الذي تعرفه</span>
+                    </h2>
+                    <p
+                        style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin-bottom: var(--spacing-xl);">
+                        لكن دب في YLP هو رمز رحلتنا التعليمية لاكتشاف قدرات طفلك، فمثلما في YLP صممنا لك برنامج DUB
+                        بثلاث مراحل مترابطة
                     </p>
 
+                    <!-- DUB Methodology Cards -->
+                    <div style="display: grid; gap: var(--spacing-lg);">
+                        <!-- Discover -->
+                        <div class="feature-card" style="border-right: 4px solid var(--color-primary-purple);">
+                            <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
+                                <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="sparkles"
+                                        style="width: 40px; height: 40px; color: var(--color-primary-purple);"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
+                                        Discover - مرحلة الاكتشاف
+                                    </h3>
+                                    <p
+                                        style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
+                                        نجري اختبار لتقييم مهارات طفلك ونحدد نقاط قوته ومواطن تحسينه، ثم نضع خطة
+                                        تعليمية مناسبة
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                </div>
+                        <!-- Utilize -->
+                        <div class="feature-card" style="border-right: 4px solid var(--color-primary-orange);">
+                            <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
+                                <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="target"
+                                        style="width: 40px; height: 40px; color: var(--color-primary-orange);"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
+                                        Utilize - مرحلة توظيف لمهارات
+                                    </h3>
+                                    <p
+                                        style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
+                                        يختار الطفل مشاريع يطبق فيها ما تعلمه ضمن بيئة آمنة للعمل الجماعي والتواصل،
+                                        والقيادة وتحمل المسؤولية
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                <!-- Feature Pills - Horizontal -->
-                <div class="summer-pills">
-                    <div class="summer-pill">
-                        <span class="pill-icon"><i data-lucide="laptop"></i></span>
-                        <span class="pill-text">التصميم الجرافيكي</span>
-                    </div>
-                    <div class="summer-pill">
-                        <span class="pill-icon"><i data-lucide="settings"></i></span>
-                        <span class="pill-text">الحكم والأنظمة المدمجة</span>
-                    </div>
-                    <div class="summer-pill">
-                        <span class="pill-icon"><i data-lucide="smartphone"></i></span>
-                        <span class="pill-text">تطوير البرمجيات</span>
-                    </div>
-                    <div class="summer-pill">
-                        <span class="pill-icon"><i data-lucide="briefcase"></i></span>
-                        <span class="pill-text">ريادة الأعمال</span>
-                    </div>
-                </div>
-
-                <!-- Info Points -->
-                <div class="summer-info-points">
-                    <div class="summer-info-item">
-                        <span class="info-icon"><i data-lucide="star" style="color: #fbbf24; fill: #fbbf24;"></i></span>
-                        <p>تم تطوير المحتوى داخل YLP بعد تنفيذ برامجنا التعليمية في 6 دول حول العالم أهمها كندا!</p>
-                    </div>
-                    <div class="summer-info-item">
-                        <span class="info-icon"><i data-lucide="star" style="color: #fbbf24; fill: #fbbf24;"></i></span>
-                        <p>تم تصميم البرنامج ليمنح طفلك تجربة عملية حقيقية تبدأ من فكرة وتنتهي بمشروع تخرج للتطبيق على
-                            كل ما تعلمه خلال البرنامج</p>
+                        <!-- Build -->
+                        <div class="feature-card" style="border-right: 4px solid var(--color-primary-teal);">
+                            <div style="display: flex; align-items: flex-start; gap: var(--spacing-md);">
+                                <div style="font-size: 40px; flex-shrink: 0;"><i data-lucide="hammer"
+                                        style="width: 40px; height: 40px; color: var(--color-primary-teal);"></i>
+                                </div>
+                                <div>
+                                    <h3
+                                        style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--spacing-sm); color: var(--color-gray-900);">
+                                        Build - مرحلة البناء
+                                    </h3>
+                                    <p
+                                        style="font-size: var(--font-size-base); color: var(--color-gray-700); line-height: 1.8; margin: 0;">
+                                        اكتسب مهارات من خلال تجربة الإبداعية أو المشاريع الحقيقية، ويتعلم الطفل
+                                        كيفية إدارة المشاريع والتعاون
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Bottom Decorative Icons Strip -->
-            <div class="summer-icons-strip">
-                <img src="boot camp/image 1.png" alt="Tech Teen Camp Icons">
-            </div>
-        </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials section">
+        <div class="container">
+            <h2 class="section-title fade-in">قصص نجاح المشاركين</h2>
+            <p class="section-subtitle fade-in">استمع إلى تجارب من سبقوك في رحلة التطوير والنجاح</p>
 
-        <!-- Program Content Section -->
-        <section class="program-content-section">
-            <div class="program-content-container">
-                <!-- Header -->
-                <div class="program-content-header">
-                    <h2 class="program-content-title">محتوى البرنامج</h2>
-                    <p class="program-content-subtitle">تدريب عملي وتفاعلي لتنمية المهارات التقنية والإبداعية</p>
-                </div>
-
-                <!-- Month 1 Card -->
-                <div class="month-card">
-                    <div class="month-card-header">
-                        <div class="session-tags">
-                            <div class="session-tag">
-                                <span class="tag-number">٨</span>
-                                <span>جلسات تفاعلية</span>
-                            </div>
-                            <div class="session-tag">
-                                <span class="tag-number">١٢</span>
-                                <span>جلسة تدريبية</span>
-                            </div>
-                        </div>
-                        <div class="month-info">
-                            <span class="month-label">الشهر الأول</span>
-                            <ul class="month-content-list">
-                                <li>أساسيات التصميم الجرافيكي بالإضافة إلى مشروع التخرج</li>
-                            </ul>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="Home page/image-2.png" alt="أحمد محمد" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>أحمد محمد</h4>
+                            <p>مدير مشاريع</p>
                         </div>
                     </div>
+                    <p class="testimonial-text">"البرنامج غير حياتي المهنية بالكامل. اكتسبت مهارات قيادية لم أكن
+                        أتخيل أنني سأمتلكها. الآن أقود فريقاً من 20 شخصاً بكل ثقة."</p>
                 </div>
 
-                <!-- Month 2 Card -->
-                <div class="month-card">
-                    <div class="month-card-header">
-                        <div class="session-tags">
-                            <div class="session-tag">
-                                <span class="tag-number">٨</span>
-                                <span>جلسات تفاعلية</span>
-                            </div>
-                            <div class="session-tag">
-                                <span class="tag-number">١٢</span>
-                                <span>جلسة تدريبية</span>
-                            </div>
-                        </div>
-                        <div class="month-info">
-                            <span class="month-label">الشهر الثاني</span>
-                            <ul class="month-content-list">
-                                <li>التحكم والإلكترونيات وتطوير البرمجيات بالإضافة إلى مشروع التخرج</li>
-                            </ul>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="Home page/image-4.png" alt="سارة أحمد" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>سارة أحمد</h4>
+                            <p>رائدة أعمال</p>
                         </div>
                     </div>
+                    <p class="testimonial-text">"تجربة استثنائية! المحتوى العملي والمدربون المحترفون ساعدوني في
+                        إطلاق مشروعي الخاص بنجاح. أنصح الجميع بالانضمام."</p>
                 </div>
 
-                <!-- Footer Note -->
-                <p class="program-footer-note">كل جلسة مدتها ساعتان بمجموع أكثر من 50 ساعة تدريبية</p>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-header">
+                        <img src="Home page/image-7.png" alt="خالد عبدالله" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>خالد عبدالله</h4>
+                            <p>مستشار تطوير</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"أفضل استثمار في مستقبلي المهني. الشبكة التي بنيتها من خلال البرنامج
+                        فتحت لي أبواباً كثيرة في مجال عملي."</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Program Details Section -->
-        <section class="program-details-section">
-            <div class="program-details-container">
-                <!-- Pyramid Icon and Tabs -->
-                <div class="program-tabs-header">
-                    <div class="pyramid-icon">
-                        <svg viewBox="0 0 60 60" width="60" height="60">
-                            <polygon points="30,5 55,50 5,50" fill="url(#pyramidGradient)" />
+
+
+    <!-- Combined CTA + Footer Section -->
+    <footer style="position: relative; overflow: hidden;">
+        <!-- CTA Section (Top) -->
+        <div
+            style="background: linear-gradient(180deg, #F9FAFB 0%, #F3F4F6 100%); padding: 5rem 0 5rem; text-align: center; border-top: 1px solid #E5E7EB;">
+            <div class="container">
+                <div
+                    style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem;">
+                    <!-- Ship Wheel Icon -->
+                    <div style="position: relative; margin-bottom: 0.5rem;">
+                        <svg viewBox="0 0 100 100" width="80" height="80">
                             <defs>
-                                <linearGradient id="pyramidGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#F9A8D4" />
-                                    <stop offset="50%" style="stop-color:#EC4899" />
-                                    <stop offset="100%" style="stop-color:#BE185D" />
+                                <linearGradient id="wheelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6" />
+                                    <stop offset="100%" style="stop-color:#F97316" />
                                 </linearGradient>
                             </defs>
+                            <circle cx="50" cy="50" r="38" fill="none" stroke="url(#wheelGradient)" stroke-width="5" />
+                            <circle cx="50" cy="50" r="10" fill="url(#wheelGradient)" />
+                            <g stroke="url(#wheelGradient)" stroke-width="4" stroke-linecap="round">
+                                <line x1="50" y1="12" x2="50" y2="40" />
+                                <line x1="50" y1="60" x2="50" y2="88" />
+                                <line x1="12" y1="50" x2="40" y2="50" />
+                                <line x1="60" y1="50" x2="88" y2="50" />
+                                <line x1="23" y1="23" x2="43" y2="43" />
+                                <line x1="57" y1="57" x2="77" y2="77" />
+                                <line x1="77" y1="23" x2="57" y2="43" />
+                                <line x1="43" y1="57" x2="23" y2="77" />
+                            </g>
+                            <circle cx="50" cy="8" r="5" fill="url(#wheelGradient)" />
+                            <circle cx="50" cy="92" r="5" fill="url(#wheelGradient)" />
+                            <circle cx="8" cy="50" r="5" fill="url(#wheelGradient)" />
+                            <circle cx="92" cy="50" r="5" fill="url(#wheelGradient)" />
+                            <circle cx="20" cy="20" r="4" fill="url(#wheelGradient)" />
+                            <circle cx="80" cy="80" r="4" fill="url(#wheelGradient)" />
+                            <circle cx="80" cy="20" r="4" fill="url(#wheelGradient)" />
+                            <circle cx="20" cy="80" r="4" fill="url(#wheelGradient)" />
                         </svg>
                     </div>
-                    <div class="program-tabs">
-                        <button class="program-tab active">برنامج الجونيور</button>
-                        <button class="program-tab">برنامج السينيور</button>
-                    </div>
-                </div>
 
-                <!-- Program Goal Section -->
-                <div class="program-goal">
-                    <h3 class="goal-title">
-                        الهدف من البرنامج
-                        <span class="goal-icon">✓</span>
-                    </h3>
-                    <p class="goal-description">
-                        ليس فقط تعليمه مهارات تقنية، بل غرس عقلية المصمم والمبتكر الصغير الذي يستطيع تحويل أفكاره إلى
-                        واقع، ويتعلم كيفية حل المشكلات بطريقة إبداعية ومنظمة.
+                    <!-- Title -->
+                    <div>
+                        <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #111827;">
+                            استثمر في مستقبل ابنك
+                        </h2>
+                        <h3 style="font-size: 1.8rem; font-weight: 700; color: #4B5563; margin-bottom: 1rem;">
+                            التعلّم يبدأ من هنا!
+                        </h3>
+                    </div>
+
+                    <!-- Subtitle -->
+                    <p style="font-size: 1.1rem; color: #6B7280; max-width: 500px;">
+                        انضم الآن لأكثر من ١٠٠٠ ولي أمر وثقوا بنا
                     </p>
-                </div>
 
-                <!-- What Will Your Child Learn Section -->
-                <div class="learning-section style=order: 2;">
-                    <h3 class="learning-title">
-                        ماذا سيتعلم طفلك؟
-                        <span class="learning-icon">✓</span>
-                    </h3>
-
-                    <!-- Learning Cards Grid -->
-                    <div class="learning-cards-grid">
-                        <!-- Card 1 - Digital Fabrication -->
-                        <div class="learning-card">
-                            <div class="learning-card-images-collage">
-                                <img src="boot camp/image 5.png" alt="التصنيع الرقمي 1"
-                                    class="collage-img collage-img-1">
-                                <img src="boot camp/image 6.png" alt="التصنيع الرقمي 2"
-                                    class="collage-img collage-img-2">
-                                <img src="boot camp/image 7.png" alt="التصنيع الرقمي 3"
-                                    class="collage-img collage-img-3">
-                            </div>
-                            <div class="learning-card-content">
-                                <h4 class="learning-card-title">
-                                    مبادئ التصنيع الرقمي (Digital Fabrication)
-                                    <span class="check-icon">✓</span>
-                                </h4>
-                                <p class="learning-card-desc">
-                                    سيفهم كيفية عمل الآلات الحديثة مثل قواطع الليزر، وكيفية تجهيز تصاميمه لتصنيع الأجزاء
-                                    الميكانيكية لمشروعه بشكل عملي ودقيق.
-                                </p>
-                            </div>
+                    <!-- CTA Button -->
+                    <a href="#registration"
+                        style="display: inline-flex; align-items: center; gap: 0.75rem; background: linear-gradient(135deg, #8B5CF6 0%, #F97316 100%); color: white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 700; border-radius: 50px; text-decoration: none; box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2); transition: all 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(139, 92, 246, 0.3)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 20px rgba(139, 92, 246, 0.2)';">
+                        <span>ابدأ الرحلة الآن</span>
+                        <div
+                            style="width: 28px; height: 28px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="globe" style="width: 16px; height: 16px; color: #8B5CF6;"></i>
                         </div>
-
-                        <!-- Card 2 - Design Thinking -->
-                        <div class="learning-card">
-                            <div class="learning-card-content">
-                                <h4 class="learning-card-title">
-                                    أساسيات التفكير التصميمي
-                                    <span class="check-icon">✓</span>
-                                </h4>
-                                <p class="learning-card-desc">
-                                    سيتعلم كيف يخطط لمشروع من البداية، ويحدد المواد والمكونات التي يحتاجها، ويرسم
-                                    الأبعاد والمخططات الأولية لفكرته.
-                                </p>
-                            </div>
-                            <div class="learning-card-image">
-                                <img src="boot camp/image-5.png" alt="التفكير التصميمي">
-                            </div>
-
-                        </div>
-
-                        <!-- Card 3 - Electronics and Programming -->
-                        <div class="learning-card">
-                            <div class="learning-card-image">
-                                <img src="boot camp/image 3.png" alt="الإلكترونيات والبرمجة">
-                            </div>
-                            <div class="learning-card-content">
-                                <h4 class="learning-card-title">
-                                    أساسيات الإلكترونيات والبرمجة
-                                    <span class="check-icon">✓</span>
-                                </h4>
-                                <p class="learning-card-desc">
-                                    سيتعرف على المكونات الكهربائية الأساسية، ويتعلم كيفية تجميع الدوائر الإلكترونية
-                                    وبرمجتها لتنفيذ أوامر محددة.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 - 2D CAD Design -->
-                        <div class="learning-card">
-                            <div class="learning-card-content">
-                                <h4 class="learning-card-title ">
-                                    التصميم الرقمي ثنائي الأبعاد (2D CAD)
-                                    <span class="check-icon ">✓</span>
-                                </h4>
-                                <p class="learning-card-desc ">
-                                    سيتعلم كيف يستخدم برامج التصميم على الكمبيوتر مثل Inkscape لتحويل أفكاره من مجرد
-                                    رسمة على ورق إلى مخطط هندسي دقيق واحترافي.
-                                </p>
-                            </div>
-                            <div class="learning-card-image">
-                                <img src="boot camp/image 4.png" alt="التصميم الرقمي">
-                            </div>
-
-                        </div>
-
-                        <!-- Card 5 - Graduation Project (Full Width) -->
-                        <div class="learning-card graduation-card">
-                            <div class="learning-card-content">
-                                <h4 class="learning-card-title graduation-title">
-                                    مشروع التخرج
-                                    <span class="graduation-icon"><i data-lucide="graduation-cap"></i></span>
-                                </h4>
-                                <p class="learning-card-desc">
-                                    في نهاية المعسكر سيقوم طفلك بتطبيق كل ما تعلمه ليصمم وينفذ مشروع تخرج متكامل وهو:
-                                    وحدة الري الذكي (Smart Irrigation System)
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
 
-    <!-- ========================================
-    ABOUT US PAGE (تعرف علينا)
-    ======================================== -->
-    <div id="about-us-page" class="hidden">
-        <!-- About Us Hero -->
-        <br><br>
-        <section class="hero" style="min-height: 60vh;">
-            <div class="container">
-                <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
-                    <div class="hero-text fade-in">
-                        <h1>تعرف علينا</h1>
-                        <p>نحن منصة رائدة في تطوير القيادات الشبابية وتمكينهم من تحقيق أحلامهم</p>
-                    </div>
-                </div>
+        <!-- Footer Content (Bottom) -->
+        <div style="background: #111827; color: white; padding: 4rem 0 2rem; position: relative;">
+            <!-- Gradient Top Border -->
+            <div
+                style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #8B5CF6, #F97316);">
             </div>
-        </section>
 
-
-        <!-- Mission & Vision -->
-        <section class="section">
             <div class="container">
+                <!-- Main Footer Grid -->
                 <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon purple"><i data-lucide="target"></i></div>
-                        <h3>رؤيتنا</h3>
-                        <p>أن نكون المنصة الأولى في المنطقة لتطوير القيادات الشبابية وتمكينهم من إحداث تأثير إيجابي في
-                            مجتمعاتهم</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon orange"><i data-lucide="lightbulb"></i></div>
-                        <h3>رسالتنا</h3>
-                        <p>تقديم برامج تدريبية عالية الجودة تساعد الشباب على اكتشاف قدراتهم القيادية وتطويرها بشكل
-                            مستدام</p>
-                    </div>
-
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon teal"><i data-lucide="star"></i></div>
-                        <h3>قيمنا</h3>
-                        <p>التميز، الابتكار، التمكين، والالتزام بتطوير جيل من القادة القادرين على مواجهة تحديات المستقبل
+                    style="display: grid; grid-template-columns: 1.5fr repeat(3, 1fr); gap: 2.5rem; margin-bottom: 3rem;">
+                    <!-- Brand Section -->
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <a href="index.html" style="display: inline-block;">
+                            <img src="Home page/logo.png" alt="YLP Logo" style="height: 50px; width: auto;">
+                        </a>
+                        <p style="color: #D1D5DB; font-size: 0.95rem; line-height: 1.7;">
+                            برنامج القيادة الشبابية - نطور قادة المستقبل ونمكّن الشباب من تحقيق أحلامهم
                         </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+                            <a href="https://x.com/YLPedu" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='#1DA1F2'; this.style.transform='translateY(-3px)';"
+                                onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+                                <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: white;">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/ylp-edu/posts/?feedView=all" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='#0077B5'; this.style.transform='translateY(-3px)';"
+                                onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+                                <i data-lucide="linkedin" style="width: 18px; height: 18px; color: white;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ylpedu" target="_blank"
+                                style="width: 40px; height: 40px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='#E4405F'; this.style.transform='translateY(-3px)';"
+                                onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.transform='translateY(0)';">
+                                <i data-lucide="instagram" style="width: 18px; height: 18px; color: white;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3
+                            style="font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 1.25rem; position: relative;">
+                            روابط سريعة
+                            <span
+                                style="position: absolute; bottom: -8px; right: 0; width: 40px; height: 3px; background: #8B5CF6; border-radius: 2px;"></span>
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <a href="index.html"
+                                style="color: #9CA3AF; text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 0.5rem;"
+                                onmouseover="this.style.color='#F97316'; this.style.paddingRight='5px';"
+                                onmouseout="this.style.color='#9CA3AF'; this.style.paddingRight='0';"> <i
+                                    data-lucide="chevron-left" style="width: 14px; height: 14px;"></i> الرئيسية </a>
+                            <a href="bootcamp.html"
+                                style="color: #9CA3AF; text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 0.5rem;"
+                                onmouseover="this.style.color='#F97316'; this.style.paddingRight='5px';"
+                                onmouseout="this.style.color='#9CA3AF'; this.style.paddingRight='0';"> <i
+                                    data-lucide="chevron-left" style="width: 14px; height: 14px;"></i> الأسعار </a>
+                            <a href="about-us.html"
+                                style="color: #9CA3AF; text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 0.5rem;"
+                                onmouseover="this.style.color='#F97316'; this.style.paddingRight='5px';"
+                                onmouseout="this.style.color='#9CA3AF'; this.style.paddingRight='0';"> <i
+                                    data-lucide="chevron-left" style="width: 14px; height: 14px;"></i> تعرف علينا </a>
+                            <a href="summer-programs.html"
+                                style="color: #9CA3AF; text-decoration: none; transition: all 0.2s ease; display: flex; align-items: center; gap: 0.5rem;"
+                                onmouseover="this.style.color='#F97316'; this.style.paddingRight='5px';"
+                                onmouseout="this.style.color='#9CA3AF'; this.style.paddingRight='0';"> <i
+                                    data-lucide="chevron-left" style="width: 14px; height: 14px;"></i> البرامج الصيفية
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h3
+                            style="font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 1.25rem; position: relative;">
+                            تواصل معنا
+                            <span
+                                style="position: absolute; bottom: -8px; right: 0; width: 40px; height: 3px; background: #F97316; border-radius: 2px;"></span>
+                        </h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div
+                                    style="width: 36px; height: 36px; background: rgba(139, 92, 246, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i data-lucide="mail" style="width: 16px; height: 16px; color: #8B5CF6;"></i>
+                                </div>
+                                <span style="color: #9CA3AF; font-size: 0.9rem;">info@ylp.com</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div
+                                    style="width: 36px; height: 36px; background: rgba(20, 184, 166, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i data-lucide="phone" style="width: 16px; height: 16px; color: #14B8A6;"></i>
+                                </div>
+                                <span style="color: #9CA3AF; font-size: 0.9rem;" dir="ltr">+966 50 123 4567</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <div
+                                    style="width: 36px; height: 36px; background: rgba(249, 115, 22, 0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i data-lucide="map-pin" style="width: 16px; height: 16px; color: #F97316;"></i>
+                                </div>
+                                <span style="color: #9CA3AF; font-size: 0.9rem;">المملكة العربية السعودية</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h3
+                            style="font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 1.25rem; position: relative;">
+                            النشرة البريدية
+                            <span
+                                style="position: absolute; bottom: -8px; right: 0; width: 40px; height: 3px; background: #14B8A6; border-radius: 2px;"></span>
+                        </h3>
+                        <p style="color: #9CA3AF; font-size: 0.9rem; margin-bottom: 1rem;">اشترك للحصول على آخر الأخبار
+                            والعروض</p>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="email" placeholder="بريدك الإلكتروني"
+                                style="flex: 1; padding: 0.75rem 1rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(255,255,255,0.05); color: white; font-size: 0.9rem; outline: none;"
+                                onfocus="this.style.borderColor='#8B5CF6';"
+                                onblur="this.style.borderColor='rgba(255,255,255,0.1)';">
+                            <button
+                                style="padding: 0.75rem 1rem; background: #8B5CF6; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;"
+                                onmouseover="this.style.background='#7C3AED';"
+                                onmouseout="this.style.background='#8B5CF6';">
+                                <i data-lucide="send" style="width: 18px; height: 18px; color: white;"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Stats -->
-        <section class="section"
-            style="background: linear-gradient(135deg, var(--color-primary-purple) 0%, var(--color-primary-orange) 100%); color: white;">
-            <div class="container">
+                <!-- Footer Bottom -->
                 <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-xl); text-align: center;">
-                    <div class="fade-in">
-                        <div
-                            style="font-size: var(--font-size-5xl); font-weight: 800; margin-bottom: var(--spacing-sm);">
-                            5000+</div>
-                        <p style="font-size: var(--font-size-xl); opacity: 0.9;">خريج</p>
-                    </div>
-
-                    <div class="fade-in">
-                        <div
-                            style="font-size: var(--font-size-5xl); font-weight: 800; margin-bottom: var(--spacing-sm);">
-                            50+</div>
-                        <p style="font-size: var(--font-size-xl); opacity: 0.9;">مدرب محترف</p>
-                    </div>
-
-                    <div class="fade-in">
-                        <div
-                            style="font-size: var(--font-size-5xl); font-weight: 800; margin-bottom: var(--spacing-sm);">
-                            95%</div>
-                        <p style="font-size: var(--font-size-xl); opacity: 0.9;">نسبة الرضا</p>
-                    </div>
-
-                    <div class="fade-in">
-                        <div
-                            style="font-size: var(--font-size-5xl); font-weight: 800; margin-bottom: var(--spacing-sm);">
-                            100+</div>
-                        <p style="font-size: var(--font-size-xl); opacity: 0.9;">شريك</p>
+                    style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <p style="color: #6B7280; font-size: 0.85rem;">&copy; 2026 YLP - جميع الحقوق محفوظة</p>
+                    <div style="display: flex; gap: 1.5rem;">
+                        <a href="#" style="color: #6B7280; font-size: 0.8rem; text-decoration: none;"
+                            onmouseover="this.style.color='white';" onmouseout="this.style.color='#6B7280';">سياسة
+                            الخصوصية</a>
+                        <a href="#" style="color: #6B7280; font-size: 0.8rem; text-decoration: none;"
+                            onmouseover="this.style.color='white';" onmouseout="this.style.color='#6B7280';">الشروط
+                            والأحكام</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Team -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title fade-in">فريق العمل</h2>
-                <p class="section-subtitle fade-in">تعرف على الفريق الذي يعمل على تطوير مهاراتك</p>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header" style="flex-direction: column; text-align: center;">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
-                                alt="د. محمد العلي" class="testimonial-avatar"
-                                style="margin: 0 auto var(--spacing-md);">
-                            <div class="testimonial-info">
-                                <h4>د. محمد العلي</h4>
-                                <p>المدير التنفيذي</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text" style="text-align: center;">خبرة 15 عاماً في تطوير القيادات والتدريب
-                            الإداري</p>
-                    </div>
-
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header" style="flex-direction: column; text-align: center;">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
-                                alt="أ. فاطمة حسن" class="testimonial-avatar" style="margin: 0 auto var(--spacing-md);">
-                            <div class="testimonial-info">
-                                <h4>أ. فاطمة حسن</h4>
-                                <p>مديرة البرامج التدريبية</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text" style="text-align: center;">متخصصة في تصميم البرامج التدريبية
-                            المبتكرة</p>
-                    </div>
-
-                    <div class="testimonial-card fade-in">
-                        <div class="testimonial-header" style="flex-direction: column; text-align: center;">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
-                                alt="م. أحمد خالد" class="testimonial-avatar" style="margin: 0 auto var(--spacing-md);">
-                            <div class="testimonial-info">
-                                <h4>م. أحمد خالد</h4>
-                                <p>مدير التطوير</p>
-                            </div>
-                        </div>
-                        <p class="testimonial-text" style="text-align: center;">خبير في تطوير الأعمال والاستراتيجيات
-                            القيادية</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>YLP</h3>
-                    <p>برنامج القيادة الشبابية - نطور قادة المستقبل</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>روابط سريعة</h3>
-                    <a href="#" data-page="home">الرئيسية</a>
-                    <a href="#" data-page="bootcamp">البوتكامب</a>
-                    <a href="#" data-page="about">من نحن</a>
-                </div>
-
-                <div class="footer-section">
-                    <h3>تواصل معنا</h3>
-                    <p>البريد الإلكتروني: info@ylp.com</p>
-                    <p>الهاتف: +966 50 123 4567</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>تابعنا</h3>
-                    <a href="#">تويتر</a>
-                    <a href="#">لينكد إن</a>
-                    <a href="#">إنستغرام</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 YLP - جميع الحقوق محفوظة</p>
             </div>
         </div>
     </footer>

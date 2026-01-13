@@ -2,72 +2,12 @@
 // YLP Website - Main JavaScript
 // ========================================
 
-// Page Navigation System
-const pages = {
-    home: 'home-page',
-    bootcamp: 'bootcamp-page',
-    about: 'about-page',
-    summer: 'summer-page',
-    aboutUs: 'about-us-page'
-};
-
-let currentPage = 'home';
-
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
-    initNavigation();
     initMobileMenu();
     initScrollAnimations();
     initVideoPlayer();
-    showPage('home');
 });
-
-// Navigation System
-function initNavigation() {
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const page = link.getAttribute('data-page');
-            showPage(page);
-
-            // Update active state
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-
-            // Close mobile menu if open
-            const navMenu = document.querySelector('.nav-menu');
-            navMenu.classList.remove('active');
-
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    });
-}
-
-// Show specific page
-function showPage(pageName) {
-    // Hide all pages
-    Object.values(pages).forEach(pageId => {
-        const pageElement = document.getElementById(pageId);
-        if (pageElement) {
-            pageElement.classList.add('hidden');
-        }
-    });
-
-    // Show selected page
-    const selectedPage = document.getElementById(pages[pageName]);
-    if (selectedPage) {
-        selectedPage.classList.remove('hidden');
-        currentPage = pageName;
-    }
-
-    // Trigger scroll animations for newly visible page
-    setTimeout(() => {
-        observeElements();
-    }, 100);
-}
 
 // Mobile Menu Toggle
 function initMobileMenu() {
@@ -79,6 +19,14 @@ function initMobileMenu() {
             navMenu.classList.toggle('active');
         });
     }
+
+    // Close menu when clicking on a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
 }
 
 // Scroll Animations
@@ -116,39 +64,50 @@ function observeElements() {
     });
 }
 
-// Video Player
+// Video Player Functionality
 function initVideoPlayer() {
-    const playButton = document.querySelector('.play-button');
+    const playButton = document.querySelector('.video-play-btn');
+    const videoContainer = document.querySelector('.hero-video');
 
-    if (playButton) {
+    if (playButton && videoContainer) {
         playButton.addEventListener('click', () => {
-            // Placeholder for video functionality
-            alert('سيتم تشغيل الفيديو هنا\nVideo will play here');
-            // In production, you would replace this with actual video player logic
-            // For example: opening a modal with an embedded YouTube/Vimeo video
+            // Replace placeholder with actual video
+            const video = document.createElement('video');
+            video.src = 'path-to-video.mp4';
+            video.controls = true;
+            video.autoplay = true;
+            video.style.cssText = 'width: 100%; height: 100%; border-radius: var(--radius-2xl); object-fit: cover;';
+
+            videoContainer.innerHTML = '';
+            videoContainer.appendChild(video);
         });
     }
 }
 
-// Smooth scroll to section (utility function)
+// Smooth scroll to section (for anchor links)
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        section.scrollIntoView({ behavior: 'smooth' });
     }
 }
 
-// Add hover effects to cards
+// Form validation helper (for future use)
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+// Program tabs functionality (for summer programs page)
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.feature-card, .testimonial-card, .bootcamp-card');
+    const programTabs = document.querySelectorAll('.program-tab');
 
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function () {
-            this.style.transform = 'translateY(-5px)';
-        });
-
-        card.addEventListener('mouseleave', function () {
-            this.style.transform = 'translateY(0)';
+    programTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active from all tabs
+            programTabs.forEach(t => t.classList.remove('active'));
+            // Add active to clicked tab
+            tab.classList.add('active');
         });
     });
 });
