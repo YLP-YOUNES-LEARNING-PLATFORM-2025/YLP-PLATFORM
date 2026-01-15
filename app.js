@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initScrollAnimations();
     initVideoPlayer();
+    setupNewsletter();
 });
 
 // Mobile Menu Toggle
@@ -111,3 +112,72 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Newsletter Functionality
+function setupNewsletter() {
+    const emailInput = document.getElementById('newsletter-email');
+    const submitBtn = document.getElementById('newsletter-submit');
+
+    // IMPORTANT: Replace this URL with your actual Google Script Web App URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwrSKg2MD783ORlDX7Bai2xlWygMvaOyGs3sHqaIEHyZrXUg1t-vFtZYJQmaJELC6cG/exec';
+
+    if (submitBtn && emailInput) {
+        submitBtn.addEventListener('click', () => {
+            const email = emailInput.value;
+
+            if (!validateEmail(email)) {
+                alert('الرجاء إدخال بريد إلكتروني صحيح');
+                return;
+            }
+
+            // Placeholder check removed
+
+            // Show loading state
+            const originalBtnContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div style="width: 18px; height: 18px; border: 2px solid white; border-top-color: transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
+            submitBtn.disabled = true;
+
+            // Send data to Google Sheet
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Important for Google Apps Script
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email })
+            })
+                .then(response => {
+                    // Since mode is no-cors, we can't check response.ok or response.json()
+                    // We assume if fetch completes, it worked (or reached the script)
+                    alert('شكراً لاشتراكك في النشرة البريدية!');
+                    emailInput.value = '';
+                    submitBtn.innerHTML = '<i data-lucide="check" style="width: 18px; height: 18px; color: white;"></i>';
+
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.disabled = false;
+                        lucide.createIcons(); // Re-initialize icons if using lucide
+                    }, 3000);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('حدث خطأ أثناء الاشتراك. الرجاء المحاولة مرة أخرى.');
+                    submitBtn.innerHTML = originalBtnContent;
+                    submitBtn.disabled = false;
+                });
+        });
+    }
+
+    // Add CSS for spinner if not exists
+    if (!document.getElementById('spinner-style')) {
+        const style = document.createElement('style');
+        style.id = 'spinner-style';
+        style.textContent = `
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+}

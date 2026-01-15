@@ -7,6 +7,7 @@
     <meta name="description" content="YLP - تعرف علينا">
     <title>تعرف علينا - YLP</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -121,7 +122,7 @@
     </section>
 
     <!-- Registration Form Section -->
-    <section class="section"
+    <section class="section" id="registration"
         style="background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%); padding: var(--spacing-3xl) 0; position: relative; overflow: hidden;">
         <div class="container">
             <!-- Header -->
@@ -161,12 +162,13 @@
                             </div>
                         </div>
 
-                        <form style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <form id="registration-form"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <!-- Row 1 -->
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم ولي
                                     الأمر</label>
-                                <input type="text" placeholder="اسم ولي أمر الطالب"
+                                <input type="text" id="parent_name" placeholder="اسم ولي أمر الطالب" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -174,7 +176,7 @@
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">رقم ولي الأمر
                                     (واتساب)</label>
-                                <input type="tel" placeholder="+20 1234 56 7890" dir="ltr"
+                                <input type="tel" id="parent_phone" placeholder="+20 1234 56 7890" dir="ltr" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; text-align: left; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -183,14 +185,14 @@
                             <!-- Row 2 -->
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">الإيميل</label>
-                                <input type="email" placeholder="البريد الالكتروني"
+                                <input type="email" id="email" placeholder="البريد الالكتروني"
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">المحافظة</label>
-                                <select
+                                <select id="governorate" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -207,14 +209,14 @@
                             <!-- Row 3 -->
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم الطالب</label>
-                                <input type="text" placeholder="اسم الطالب"
+                                <input type="text" id="student_name" placeholder="اسم الطالب" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">عمر الطالب</label>
-                                <input type="text" placeholder="عمر الطالب"
+                                <input type="text" id="student_age" placeholder="عمر الطالب" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -224,7 +226,7 @@
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">المرحلة
                                     الدراسية</label>
-                                <select
+                                <select id="grade_level" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -237,7 +239,7 @@
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">نوع
                                     التعليم</label>
-                                <select
+                                <select id="education_type" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -252,7 +254,7 @@
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم
                                     المدرسة</label>
-                                <input type="text" placeholder="اسم المدرسة"
+                                <input type="text" id="school_name" placeholder="اسم المدرسة" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
@@ -260,20 +262,20 @@
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                                 <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">هل يتوفر مع الطالب
                                     جهاز لابتوب؟</label>
-                                <select
+                                <select id="has_laptop" required
                                     style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
                                     onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
                                     onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
                                     <option value="" disabled selected>اختر من فضلك</option>
-                                    <option value="نعم">نعم</option>
-                                    <option value="لا">لا</option>
+                                    <option value="true">نعم</option>
+                                    <option value="false">لا</option>
                                 </select>
                             </div>
 
                             <!-- Submit Button -->
                             <div
                                 style="grid-column: span 2; display: flex; justify-content: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid #F3F4F6;">
-                                <button type="submit" class="btn"
+                                <button type="submit" class="btn" id="submit-btn"
                                     style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); color: white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 700; border-radius: 50px; display: flex; align-items: center; gap: 0.75rem; box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4); transition: all 0.3s ease; border: none; cursor: pointer;"
                                     onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 15px 30px -5px rgba(245, 158, 11, 0.5)';"
                                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px -5px rgba(245, 158, 11, 0.4)';">
@@ -637,11 +639,11 @@
                         <p style="color: #9CA3AF; font-size: 0.9rem; margin-bottom: 1rem;">اشترك للحصول على آخر الأخبار
                             والعروض</p>
                         <div style="display: flex; gap: 0.5rem;">
-                            <input type="email" placeholder="بريدك الإلكتروني"
+                            <input type="email" id="newsletter-email" placeholder="بريدك الإلكتروني"
                                 style="flex: 1; padding: 0.75rem 1rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(255,255,255,0.05); color: white; font-size: 0.9rem; outline: none;"
                                 onfocus="this.style.borderColor='#8B5CF6';"
                                 onblur="this.style.borderColor='rgba(255,255,255,0.1)';">
-                            <button
+                            <button id="newsletter-submit"
                                 style="padding: 0.75rem 1rem; background: #8B5CF6; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;"
                                 onmouseover="this.style.background='#7C3AED';"
                                 onmouseout="this.style.background='#8B5CF6';">
@@ -700,6 +702,7 @@
     </script>
 
     <script src="app.js"></script>
+    <script src="supabase-integration.js"></script>
     <script>lucide.createIcons();</script>
 </body>
 
