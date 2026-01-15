@@ -4,11 +4,46 @@
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
+    initLoader(); // Added
     initMobileMenu();
     initScrollAnimations();
+    initScrollTop(); // Added
     initVideoPlayer();
     setupNewsletter();
 });
+
+// Loading Spinner
+function initLoader() {
+    const loader = document.querySelector('.loader-wrapper');
+    if (loader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500);
+        });
+    }
+}
+
+// Scroll to Top Button
+function initScrollTop() {
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+}
 
 // Mobile Menu Toggle
 function initMobileMenu() {

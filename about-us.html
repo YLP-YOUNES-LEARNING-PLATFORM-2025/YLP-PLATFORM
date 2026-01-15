@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top-btn" id="scrollTopBtn">
+        <i data-lucide="arrow-up"></i>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -75,12 +79,13 @@
                 <div class="fade-in" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
                     <!-- Modern Icon -->
                     <div
-                        style="width: 70px; height: 70px; background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);">
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--color-accent-pink) 0%, #DB2777 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);">
                         <i data-lucide="users" style="width: 32px; height: 32px; color: white;"></i>
                     </div>
-                    <h2 style="font-size: 2.5rem; font-weight: 800; color: #1F2937;">تعرف <span
-                            style="color: #F59E0B;">علينا</span></h2>
-                    <p style="font-size: 1.15rem; color: #6B7280; line-height: 1.8; max-width: 600px;">نحن منصة رائدة في
+                    <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--color-gray-900);">تعرف <span
+                            style="color: var(--color-primary-orange);">علينا</span></h2>
+                    <p style="font-size: 1.15rem; color: var(--color-gray-500); line-height: 1.8; max-width: 600px;">نحن
+                        منصة رائدة في
                         تطوير القيادات الشبابية وتمكينهم من تحقيق أحلامهم من خلال برامج تعليمية مبتكرة</p>
                 </div>
             </div>
@@ -165,37 +170,26 @@
                         <form id="registration-form"
                             style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <!-- Row 1 -->
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم ولي
-                                    الأمر</label>
+                            <div class="input-group">
+                                <label class="form-label">اسم ولي الأمر</label>
                                 <input type="text" id="parent_name" placeholder="اسم ولي أمر الطالب" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                                    class="form-input">
                             </div>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">رقم ولي الأمر
-                                    (واتساب)</label>
+                            <div class="input-group">
+                                <label class="form-label">رقم ولي الأمر (واتساب)</label>
                                 <input type="tel" id="parent_phone" placeholder="+20 1234 56 7890" dir="ltr" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; text-align: left; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                                    class="form-input" style="text-align: left;">
                             </div>
 
                             <!-- Row 2 -->
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">الإيميل</label>
-                                <input type="email" id="email" placeholder="البريد الالكتروني"
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                            <div class="input-group">
+                                <label class="form-label">الإيميل</label>
+                                <input type="email" id="email" placeholder="البريد الالكتروني" class="form-input">
                             </div>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">المحافظة</label>
-                                <select id="governorate" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                            <div class="input-group">
+                                <label class="form-label">المحافظة</label>
+                                <select id="governorate" required class="form-input"
+                                    style="cursor: pointer; color: #6B7280;">
                                     <option value="" disabled selected>اختر المحافظة</option>
                                     <option value="المنيا">المنيا</option>
                                     <option value="أسيوط">أسيوط</option>
@@ -207,42 +201,32 @@
                             </div>
 
                             <!-- Row 3 -->
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم الطالب</label>
+                            <div class="input-group">
+                                <label class="form-label">اسم الطالب</label>
                                 <input type="text" id="student_name" placeholder="اسم الطالب" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                                    class="form-input">
                             </div>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">عمر الطالب</label>
+                            <div class="input-group">
+                                <label class="form-label">عمر الطالب</label>
                                 <input type="text" id="student_age" placeholder="عمر الطالب" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                                    class="form-input">
                             </div>
 
                             <!-- Row 4 -->
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">المرحلة
-                                    الدراسية</label>
-                                <select id="grade_level" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                            <div class="input-group">
+                                <label class="form-label">المرحلة الدراسية</label>
+                                <select id="grade_level" required class="form-input"
+                                    style="cursor: pointer; color: #6B7280;">
                                     <option value="" disabled selected>اختر المرحلة الدراسية</option>
                                     <option value="ابتدائي">ابتدائي</option>
                                     <option value="إعدادي">إعدادي</option>
                                     <option value="ثانوي">ثانوي</option>
                                 </select>
                             </div>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">نوع
-                                    التعليم</label>
-                                <select id="education_type" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                            <div class="input-group">
+                                <label class="form-label">نوع التعليم</label>
+                                <select id="education_type" required class="form-input"
+                                    style="cursor: pointer; color: #6B7280;">
                                     <option value="" disabled selected>اختر نوع التعليم</option>
                                     <option value="حكومي">حكومي</option>
                                     <option value="خاص">خاص</option>
@@ -251,21 +235,15 @@
                             </div>
 
                             <!-- Row 5 -->
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">اسم
-                                    المدرسة</label>
+                            <div class="input-group">
+                                <label class="form-label">اسم المدرسة</label>
                                 <input type="text" id="school_name" placeholder="اسم المدرسة" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                                    class="form-input">
                             </div>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label style="font-size: 0.875rem; font-weight: 600; color: #374151;">هل يتوفر مع الطالب
-                                    جهاز لابتوب؟</label>
-                                <select id="has_laptop" required
-                                    style="padding: 1rem 1.25rem; border: 2px solid #E5E7EB; border-radius: 12px; font-size: 0.95rem; background: #FAFAFA; color: #6B7280; cursor: pointer; transition: all 0.2s ease; outline: none;"
-                                    onfocus="this.style.borderColor='#EC4899'; this.style.background='white'; this.style.boxShadow='0 0 0 4px rgba(236, 72, 153, 0.1)';"
-                                    onblur="this.style.borderColor='#E5E7EB'; this.style.background='#FAFAFA'; this.style.boxShadow='none';">
+                            <div class="input-group">
+                                <label class="form-label">هل يتوفر مع الطالب جهاز لابتوب؟</label>
+                                <select id="has_laptop" required class="form-input"
+                                    style="cursor: pointer; color: #6B7280;">
                                     <option value="" disabled selected>اختر من فضلك</option>
                                     <option value="true">نعم</option>
                                     <option value="false">لا</option>
