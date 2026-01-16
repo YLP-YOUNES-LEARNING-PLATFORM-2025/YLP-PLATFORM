@@ -2692,3 +2692,18 @@ body {
     /* Slightly smaller on mobile */
   }
 }
+
+/* ========================================
+   Nav Menu Position Adjustment
+   ======================================== */
+.nav-menu {
+  margin-right: 2rem;
+}
+
+
+
+/* Nav links shift right */
+ul.nav-menu {
+  margin-inline-end: 3rem !important;
+}
+
