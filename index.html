@@ -37,14 +37,13 @@
                 <li><a href="educational-programs.html" class="nav-link">البرامج التعليمية</a></li>
                 <li><a href="summer-programs.html" class="nav-link">البرامج الصيفية</a></li>
                 <li><a href="about-us.html" class="nav-link">تعرف علينا</a></li>
-                <li><button class="btn btn-language"><i data-lucide="globe"></i> English</button></li>
                 <li><button class="btn btn-register">تسجيل الدخول</button></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <br><br>
+    <!-- <br><br> -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -104,8 +103,8 @@
     <section class="section"
         style="background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%); padding: 5rem 0; position: relative; overflow: hidden; border: none !important;">
         <!-- Decorative Sun -->
-        <div style="position: absolute; top: 20px; left: 40px; width: 80px; height: 80px;">
-            <svg viewBox="0 0 100 100" width="80" height="80">
+        <div class="decorative-icon" style="position: absolute; top: 20px; left: 40px;">
+            <svg viewBox="0 0 100 100" width="60" height="60">
                 <circle cx="50" cy="50" r="25" fill="#FBBF24" />
                 <g stroke="#FBBF24" stroke-width="4" stroke-linecap="round">
                     <line x1="50" y1="10" x2="50" y2="20" />
@@ -121,8 +120,8 @@
         </div>
 
         <!-- Decorative Star -->
-        <div style="position: absolute; top: 60px; right: 60px;">
-            <svg viewBox="0 0 50 50" width="60" height="60">
+        <div class="decorative-icon" style="position: absolute; top: 60px; right: 60px;">
+            <svg viewBox="0 0 50 50" width="40" height="40">
                 <path d="M25 0 L30 20 L50 25 L30 30 L25 50 L20 30 L0 25 L20 20 Z" fill="#1E3A5F" />
             </svg>
         </div>
@@ -256,41 +255,14 @@
 
     <!-- Why Children Lose Enthusiasm Section -->
     <section class="section"
-        style="background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-gray-50) 100%); border-top: 3px solid var(--color-primary-orange); border-bottom: 3px solid var(--color-primary-orange); position: relative;">
+        style="background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-gray-50) 100%); position: relative;">
         <div class="container">
             <div style="text-align: center; margin-bottom: var(--spacing-2xl);">
-                <!-- Sun Icon -->
-                <div class="fade-in" style="display: inline-block; margin-bottom: var(--spacing-lg);">
+                <!-- Icon -->
+                <div class="fade-in" style="display: flex; justify-content: center; margin-bottom: var(--spacing-lg);">
                     <div
-                        style="width: 80px; height: 80px; background: var(--color-primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(249, 115, 22, 0.3);">
-                        <div style="width: 50px; height: 50px; background: #FF6B35; border-radius: 50%;"></div>
-                        <!-- Sun rays -->
-                        <div style="position: absolute; width: 100%; height: 100%;">
-                            <div
-                                style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); top: -18px; left: 50%; transform: translateX(-50%);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 4px; height: 15px; background: var(--color-primary-orange); bottom: -18px; left: 50%; transform: translateX(-50%);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); left: -18px; top: 50%; transform: translateY(-50%);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 15px; height: 4px; background: var(--color-primary-orange); right: -18px; top: 50%; transform: translateY(-50%);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; left: 8px; transform: rotate(45deg);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); top: 8px; right: 8px; transform: rotate(-45deg);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; left: 8px; transform: rotate(-45deg);">
-                            </div>
-                            <div
-                                style="position: absolute; width: 4px; height: 12px; background: var(--color-primary-orange); bottom: 8px; right: 8px; transform: rotate(45deg);">
-                            </div>
-                        </div>
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--color-primary-orange) 0%, #FF6B35 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);">
+                        <i data-lucide="sun" style="width: 32px; height: 32px; color: white;"></i>
                     </div>
                 </div>
 
@@ -493,109 +465,60 @@
                 </div>
             </div>
 
-            <!-- Gradient Stats Box -->
-            <div class="fade-in"
-                style="background: linear-gradient(135deg, #7C3AED 0%, #DB2777 50%, #EA580C 100%); border-radius: 24px; padding: 4rem 2rem; color: white; position: relative; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);">
+            <!-- Stats Section -->
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 class="section-title">
+                    نتائج نفخر بتحقيقها، <span style="color: var(--color-primary-orange);">والرحلة ما زالت
+                        مستمرة...</span>
+                </h2>
+                <p class="section-subtitle">خطوات مدروسة تصنع فارقاً في مستقبل طفلك</p>
+            </div>
 
-                <!-- Background Decoration -->
-                <div
-                    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 20%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 20%); pointer-events: none;">
+            <!-- Stats Grid using feature-card-modern -->
+            <div class="features-grid" style="grid-template-columns: repeat(5, 1fr);">
+                <!-- Stat 1 -->
+                <div class="feature-card-modern purple fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="users" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-purple);">٥٠٠٠+</h4>
+                    <p>طالب تدرب ونجح معنا</p>
                 </div>
 
-                <!-- Watermark Icon -->
-                <div style="position: absolute; left: -20px; bottom: -40px; opacity: 0.1; transform: rotate(15deg);">
-                    <i data-lucide="zap" style="width: 250px; height: 250px; color: white;"></i>
+                <!-- Stat 2 -->
+                <div class="feature-card-modern orange fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="user-check" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-orange);">٦٠+</h4>
+                    <p>مدرب محترف</p>
                 </div>
 
-                <div style="position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
-                    <div style="text-align: center; margin-bottom: 5rem;">
-                        <h2
-                            style="font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.2; text-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-                            <span style="color: white;">نتائج نفخر بتحقيقها، </span>
-                            <span style="color: #FBBF24;">والرحلة ما زالت مستمرة...</span>
-                        </h2>
-                        <p
-                            style="font-size: 1.4rem; font-weight: 500; color: rgba(255,255,255,0.95); max-width: 700px; margin: 0 auto; line-height: 1.6;">
-                            خطوات مدروسة تصنع فارقاً في مستقبل طفلك
-                        </p>
+                <!-- Stat 3 -->
+                <div class="feature-card-modern pink fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="clock" style="width: 32px; height: 32px;"></i>
                     </div>
+                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-accent-pink);">٣٠٠٠٠+</h4>
+                    <p>ساعة تدريبية</p>
+                </div>
 
-                    <!-- Stats Grid -->
-                    <div
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
-                        <!-- Stat 1 -->
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
-                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
-                            <div
-                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                                <i data-lucide="users" style="width: 30px; height: 30px; color: white;"></i>
-                            </div>
-                            <div
-                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                ٥٠٠٠+</div>
-                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">طالب تدرب ونجح
-                                معنا</p>
-                        </div>
-
-                        <!-- Stat 2 -->
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
-                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
-                            <div
-                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                                <i data-lucide="user-check" style="width: 30px; height: 30px; color: white;"></i>
-                            </div>
-                            <div
-                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                ٦٠+</div>
-                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">مدرب محترف</p>
-                        </div>
-
-                        <!-- Stat 3 -->
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
-                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
-                            <div
-                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                                <i data-lucide="clock" style="width: 30px; height: 30px; color: white;"></i>
-                            </div>
-                            <div
-                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                ٣٠٠٠٠+</div>
-                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">ساعة تدريبية</p>
-                        </div>
-
-                        <!-- Stat 4 -->
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
-                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
-                            <div
-                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                                <i data-lucide="refresh-cw" style="width: 30px; height: 30px; color: white;"></i>
-                            </div>
-                            <div
-                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                ٩٦٪</div>
-                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">نسبة تجديد
-                                الاشتراك</p>
-                        </div>
-
-                        <!-- Stat 5 -->
-                        <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;"
-                            onmouseover="this.style.transform='translateY(-10px)'; this.style.background='rgba(255,255,255,0.15)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.1)';">
-                            <div
-                                style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                                <i data-lucide="smile" style="width: 30px; height: 30px; color: white;"></i>
-                            </div>
-                            <div
-                                style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                ٤.٩</div>
-                            <p style="font-size: 0.95rem; font-weight: 700; margin: 0; opacity: 0.9;">رضا العملاء (من ٥)
-                            </p>
-                        </div>
+                <!-- Stat 4 -->
+                <div class="feature-card-modern purple fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="refresh-cw" style="width: 32px; height: 32px;"></i>
                     </div>
+                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-purple);">٩٦٪</h4>
+                    <p>نسبة تجديد الاشتراك</p>
+                </div>
+
+                <!-- Stat 5 -->
+                <div class="feature-card-modern orange fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="smile" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary-orange);">٤.٩</h4>
+                    <p>رضا العملاء (من ٥)</p>
                 </div>
             </div>
 
@@ -666,35 +589,28 @@
 
         <div class="container">
             <!-- Top Section: Text + Image -->
-            <div
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+            <div class="dub-grid">
                 <!-- Text Content -->
-                <div class="fade-in">
-                    <h2
-                        style="font-size: 2.8rem; font-weight: 800; color: #1F2937; margin-bottom: 1.5rem; line-height: 1.2;">
-                        هذا هو <span style="color: #F97316;">الدب الذي تعرفه</span>
+                <div class="fade-in dub-text">
+                    <h2>
+                        هذا هو <span>الدب الذي تعرفه</span>
                     </h2>
-                    <p style="font-size: 1.15rem; color: #6B7280; line-height: 1.8; max-width: 500px;">
+                    <p>
                         لكن دب في YLP هو رمز رحلتنا التعليمية لاكتشاف قدرات طفلك، فمثلما في YLP صممنا لك برنامج DUB
                         بثلاث مراحل مترابطة
                     </p>
                 </div>
 
                 <!-- Panda Image with Circular Frame -->
-                <div class="fade-in" style="text-align: center;">
-                    <div style="position: relative; display: inline-block;">
-                        <!-- Circular Frame with Border -->
-                        <div
-                            style="width: 350px; height: 350px; border-radius: 50%; overflow: hidden; border: 6px solid #E5E7EB; box-shadow: 0 20px 40px rgba(0,0,0,0.1); margin: 0 auto;">
-                            <img src="Home page/panda.png" alt="الدب الذي تعرفه"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
+                <div class="fade-in dub-image-wrapper">
+                    <div class="dub-image-frame">
+                        <img src="Home page/panda.png" alt="الدب الذي تعرفه">
                     </div>
                 </div>
             </div>
 
             <!-- DUB Methodology Cards - Horizontal Layout -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div class="dub-cards">
                 <!-- Discover Card -->
                 <div class="feature-card-modern purple fade-in">
                     <div class="icon-wrapper">

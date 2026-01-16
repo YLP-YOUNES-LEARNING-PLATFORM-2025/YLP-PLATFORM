@@ -32,7 +32,6 @@
                 <li><a href="educational-programs.html" class="nav-link">البرامج التعليمية</a></li>
                 <li><a href="summer-programs.html" class="nav-link active">البرامج الصيفية</a></li>
                 <li><a href="about-us.html" class="nav-link">تعرف علينا</a></li>
-                <li><button class="btn btn-language"><i data-lucide="globe"></i> English</button></li>
                 <li><button class="btn btn-register">تسجيل الدخول</button></li>
             </ul>
         </div>
@@ -191,30 +190,19 @@
     </section>
 
     <!-- Skills Your Child Will Learn Section -->
-    <section
-        style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); padding: 4rem 0; position: relative; overflow: hidden;">
-        <!-- Decorative Leaf Icon -->
-        <div style="position: absolute; top: 30px; left: 40px;">
-            <svg viewBox="0 0 50 60" width="40" height="50">
-                <path d="M25 5 Q35 20, 25 35 Q15 20, 25 5 Z" fill="#8B5CF6" />
-                <path d="M15 25 Q25 35, 35 25" stroke="#8B5CF6" fill="none" stroke-width="3" />
-                <line x1="25" y1="35" x2="25" y2="55" stroke="#8B5CF6" stroke-width="3" />
-            </svg>
-        </div>
-
-        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="container">
             <!-- Header -->
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 1rem;">
-                    المهارات التي <span style="color: #FDBA74;">سيتعلمها طفلك</span>
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <h2 class="section-title">
+                    المهارات التي <span style="color: var(--color-primary-orange);">سيتعلمها طفلك</span>
                 </h2>
-                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.9);">
-                    خطوات مدروسة تصنع فارقاً في مستقبل طفلك
-                </p>
+                <p class="section-subtitle">خطوات مدروسة تصنع فارقاً في مستقبل طفلك</p>
             </div>
 
             <!-- Skills Cards Grid -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+            <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); margin-bottom: var(--spacing-xl);">
                 <!-- Card 1 -->
                 <div class="feature-card-modern purple fade-in">
                     <div class="icon-wrapper">
@@ -244,7 +232,7 @@
             </div>
 
             <!-- Bottom CTA Banner -->
-            <div
+            <div class="fade-in"
                 style="background: var(--gradient-purple-orange); border-radius: 16px; padding: 2rem 3rem; text-align: center;">
                 <p style="font-size: 1.1rem; font-weight: 600; color: white; margin: 0 0 0.75rem 0;">
                     في نهاية المعسكر يحصل كل طالب على شهادة معتمدة بالإضافة إلى جوائز للمشاريع الفائزة.
@@ -321,135 +309,97 @@
     </section>
 
     <!-- Program Details Section -->
-    <section class="program-details-section">
-        <div class="program-details-container">
-            <!-- Pyramid Icon and Tabs -->
-            <div class="program-tabs-header">
-                <div class="pyramid-icon">
-                    <svg viewBox="0 0 60 60" width="60" height="60">
-                        <polygon points="30,5 55,50 5,50" fill="url(#pyramidGradient)" />
-                        <defs>
-                            <linearGradient id="pyramidGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" style="stop-color:#F9A8D4" />
-                                <stop offset="50%" style="stop-color:#EC4899" />
-                                <stop offset="100%" style="stop-color:#BE185D" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+    <!-- Program Details Section -->
+    <section class="section" style="background: var(--color-gray-50);">
+        <div class="container">
+            <!-- Header with Tabs -->
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                <!-- Icon -->
+                <div style="display: flex; justify-content: center; margin-bottom: var(--spacing-lg);">
+                    <div
+                        style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--color-accent-pink) 0%, #BE185D 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);">
+                        <i data-lucide="book-open" style="width: 32px; height: 32px; color: white;"></i>
+                    </div>
                 </div>
-                <div class="program-tabs">
-                    <button class="program-tab active">برنامج الجونيور</button>
-                    <button class="program-tab">برنامج السينيور</button>
-                </div>
-            </div>
 
-            <!-- Program Goal Section -->
-            <div class="program-goal">
-                <h3 class="goal-title">
+                <!-- Tabs -->
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: var(--spacing-lg);">
+                    <button class="btn btn-primary"
+                        style="background: var(--color-accent-pink); border-color: var(--color-accent-pink);">برنامج
+                        الجونيور</button>
+                    <button class="btn btn-secondary">برنامج السينيور</button>
+                </div>
+
+                <h2 class="section-title">
                     الهدف من البرنامج
-                    <span class="goal-icon">✓</span>
-                </h3>
-                <p class="goal-description">
-                    ليس فقط تعليمه مهارات تقنية، بل غرس عقلية المصمم والمبتكر الصغير الذي يستطيع تحويل أفكاره إلى
-                    واقع، ويتعلم كيفية حل المشكلات بطريقة إبداعية ومنظمة.
+                </h2>
+                <p class="section-subtitle" style="max-width: 800px; margin: 0 auto;">
+                    ليس فقط تعليمه مهارات تقنية، بل غرس عقلية المصمم والمبتكر الصغير الذي يستطيع تحويل أفكاره إلى واقع،
+                    ويتعلم كيفية حل المشكلات بطريقة إبداعية ومنظمة.
                 </p>
             </div>
 
-            <!-- What Will Your Child Learn Section -->
-            <div class="learning-section style=order: 2;">
-                <h3 class="learning-title">
-                    ماذا سيتعلم طفلك؟
-                    <span class="learning-icon">✓</span>
+            <!-- What Will Your Child Learn -->
+            <div class="fade-in" style="text-align: center; margin-bottom: var(--spacing-lg);">
+                <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--color-gray-800);">
+                    ماذا سيتعلم <span style="color: var(--color-primary-orange);">طفلك؟</span>
                 </h3>
+            </div>
 
-                <!-- Learning Cards Grid -->
-                <div class="learning-cards-grid">
-                    <!-- Card 1 - Digital Fabrication -->
-                    <div class="learning-card">
-                        <div class="learning-card-images-collage">
-                            <img src="boot camp/image 5.png" alt="التصنيع الرقمي 1" class="collage-img collage-img-1">
-                            <img src="boot camp/image 6.png" alt="التصنيع الرقمي 2" class="collage-img collage-img-2">
-                            <img src="boot camp/image 7.png" alt="التصنيع الرقمي 3" class="collage-img collage-img-3">
-                        </div>
-                        <div class="learning-card-content">
-                            <h4 class="learning-card-title">
-                                مبادئ التصنيع الرقمي (Digital Fabrication)
-                                <span class="check-icon">✓</span>
-                            </h4>
-                            <p class="learning-card-desc">
-                                سيفهم كيفية عمل الآلات الحديثة مثل قواطع الليزر، وكيفية تجهيز تصاميمه لتصنيع الأجزاء
-                                الميكانيكية لمشروعه بشكل عملي ودقيق.
-                            </p>
-                        </div>
+            <!-- Learning Cards Grid -->
+            <div class="features-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: var(--spacing-xl);">
+                <!-- Card 1 - Digital Fabrication -->
+                <div class="feature-card-modern purple fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="settings" style="width: 32px; height: 32px;"></i>
                     </div>
-
-                    <!-- Card 2 - Design Thinking -->
-                    <div class="learning-card">
-                        <div class="learning-card-content">
-                            <h4 class="learning-card-title">
-                                أساسيات التفكير التصميمي
-                                <span class="check-icon">✓</span>
-                            </h4>
-                            <p class="learning-card-desc">
-                                سيتعلم كيف يخطط لمشروع من البداية، ويحدد المواد والمكونات التي يحتاجها، ويرسم
-                                الأبعاد والمخططات الأولية لفكرته.
-                            </p>
-                        </div>
-                        <div class="learning-card-image">
-                            <img src="boot camp/image-5.png" alt="التفكير التصميمي">
-                        </div>
-
-                    </div>
-
-                    <!-- Card 3 - Electronics and Programming -->
-                    <div class="learning-card">
-                        <div class="learning-card-image">
-                            <img src="boot camp/image 3.png" alt="الإلكترونيات والبرمجة">
-                        </div>
-                        <div class="learning-card-content">
-                            <h4 class="learning-card-title">
-                                أساسيات الإلكترونيات والبرمجة
-                                <span class="check-icon">✓</span>
-                            </h4>
-                            <p class="learning-card-desc">
-                                سيتعرف على المكونات الكهربائية الأساسية، ويتعلم كيفية تجميع الدوائر الإلكترونية
-                                وبرمجتها لتنفيذ أوامر محددة.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 - 2D CAD Design -->
-                    <div class="learning-card">
-                        <div class="learning-card-content">
-                            <h4 class="learning-card-title ">
-                                التصميم الرقمي ثنائي الأبعاد (2D CAD)
-                                <span class="check-icon ">✓</span>
-                            </h4>
-                            <p class="learning-card-desc ">
-                                سيتعلم كيف يستخدم برامج التصميم على الكمبيوتر مثل Inkscape لتحويل أفكاره من مجرد
-                                رسمة على ورق إلى مخطط هندسي دقيق واحترافي.
-                            </p>
-                        </div>
-                        <div class="learning-card-image">
-                            <img src="boot camp/image 4.png" alt="التصميم الرقمي">
-                        </div>
-
-                    </div>
-
-                    <!-- Card 5 - Graduation Project (Full Width) -->
-                    <div class="learning-card graduation-card">
-                        <div class="learning-card-content">
-                            <h4 class="learning-card-title graduation-title">
-                                مشروع التخرج
-                                <span class="graduation-icon"><i data-lucide="graduation-cap"></i></span>
-                            </h4>
-                            <p class="learning-card-desc">
-                                في نهاية المعسكر سيقوم طفلك بتطبيق كل ما تعلمه ليصمم وينفذ مشروع تخرج متكامل وهو:
-                                وحدة الري الذكي (Smart Irrigation System)
-                            </p>
-                        </div>
-                    </div>
+                    <h4>مبادئ التصنيع الرقمي (Digital Fabrication)</h4>
+                    <p>سيفهم كيفية عمل الآلات الحديثة مثل قواطع الليزر، وكيفية تجهيز تصاميمه لتصنيع الأجزاء الميكانيكية
+                        لمشروعه بشكل عملي ودقيق.</p>
                 </div>
+
+                <!-- Card 2 - Design Thinking -->
+                <div class="feature-card-modern orange fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="lightbulb" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4>أساسيات التفكير التصميمي</h4>
+                    <p>سيتعلم كيف يخطط لمشروع من البداية، ويحدد المواد والمكونات التي يحتاجها، ويرسم الأبعاد والمخططات
+                        الأولية لفكرته.</p>
+                </div>
+
+                <!-- Card 3 - Electronics and Programming -->
+                <div class="feature-card-modern pink fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="cpu" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4>أساسيات الإلكترونيات والبرمجة</h4>
+                    <p>سيتعرف على المكونات الكهربائية الأساسية، ويتعلم كيفية تجميع الدوائر الإلكترونية وبرمجتها لتنفيذ
+                        أوامر محددة.</p>
+                </div>
+
+                <!-- Card 4 - 2D CAD Design -->
+                <div class="feature-card-modern purple fade-in">
+                    <div class="icon-wrapper">
+                        <i data-lucide="pen-tool" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <h4>التصميم الرقمي ثنائي الأبعاد (2D CAD)</h4>
+                    <p>سيتعلم كيف يستخدم برامج التصميم على الكمبيوتر مثل Inkscape لتحويل أفكاره من مجرد رسمة على ورق إلى
+                        مخطط هندسي دقيق واحترافي.</p>
+                </div>
+            </div>
+
+            <!-- Graduation Project Banner -->
+            <div class="fade-in"
+                style="background: var(--gradient-purple-orange); border-radius: 16px; padding: 2rem 3rem; text-align: center;">
+                <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+                    <i data-lucide="graduation-cap" style="width: 40px; height: 40px; color: white;"></i>
+                </div>
+                <h4 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 0.5rem;">مشروع التخرج</h4>
+                <p style="font-size: 1rem; color: rgba(255,255,255,0.95); margin: 0; max-width: 600px; margin: 0 auto;">
+                    في نهاية المعسكر سيقوم طفلك بتطبيق كل ما تعلمه ليصمم وينفذ مشروع تخرج متكامل وهو: وحدة الري الذكي
+                    (Smart Irrigation System)
+                </p>
             </div>
         </div>
     </section>
